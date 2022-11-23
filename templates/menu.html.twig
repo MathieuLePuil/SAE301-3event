@@ -1,15 +1,15 @@
-<a href="accueil">Accueil</a> |
-<a href="manifs">Manifestations</a> |
+<a href="{{ path('app_accueil') }}">Accueil</a> |
+<a href="{{ path('app_prog') }}">Manifestations</a> |
 {% if is_granted("ROLE_ADMIN") %}
-<a href="admin">Administration</a> |
+<a href="{{ path('app_admin') }}">Administration</a> |
 {% endif %}
 
 {% if app.user %}
     <a href="logout">Déconnexion</a> |
     {{ app.user.email }}
 {% else %}
-    <a href="login">Connexion</a> |
-    <a href="register">S'inscrire</a>
+    <a href="{{ path('app_login') }}">Connexion</a> |
+    <a href="{{ path('app_register') }}">S'inscrire</a>
 {% endif %}
 
 <hr>
