@@ -1,20 +1,40 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PanierController!{% endblock %}
+{% block title %}Panier{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Evan/Documents/GitHub/SAE301-3event/src/Controller/PanierController.php'|file_link(0) }}">src/Controller/PanierController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Evan/Documents/GitHub/SAE301-3event/templates/panier/index.html.twig'|file_link(0) }}">templates/panier/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <div id="arianne">
+        <ul>
+            <li><a href="#">Panier</a></li>&gt
+            <li><a href="#">Connexion / Inscription</a></li>&gt
+            <li><a href="#">Paiement</a></li>&gt
+            <li><a href="#">Validation</a></li>
+        </ul>
+    </div>
+    <div class="cartCard">
+        <div class="topCart">
+            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
+            <div class="details">
+                <h2>Rammstein</h2>
+                <p>Samedi 22 juillet 2023</p>
+                <p>Stade de l'Aube</p>
+                <p>21h</p>
+            </div>
+            <div class="qte">
+                <div class="nbp">
+                    <label for="nbp">Nombre de place : </label>
+                    <input type="number">
+                </div>
+                <div class="prix">
+                    <label for="#">Prix à l'unité : </label>
+                    <p>70 €</p>
+                </div>
+            </div>
+        </div>
+        <div class="prixTotal">
+            <p>Prix total : 140 €</p>
+            <a href="#" class="command">Commander</a>
+        </div>
+    </div>
+    <a href="#" class="command">Continuer mes achats</a>
 {% endblock %}
