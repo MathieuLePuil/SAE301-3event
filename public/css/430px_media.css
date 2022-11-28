@@ -1,0 +1,16 @@
+@media (max-width: 1250px) {
+    #topFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    footer img{
+        display: none;
+    }
+    .footerBox{
+        margin-top: 3em;
+    }
+    .footerBox ul li a{
+        text-align: center;
+    }
+    /*Footer*/
+}
