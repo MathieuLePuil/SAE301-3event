@@ -161,8 +161,8 @@ class ComposerStaticInit71e982b43d60b6ab0dabac294b9401d9
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -546,8 +546,8 @@ class ComposerStaticInit71e982b43d60b6ab0dabac294b9401d9
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
-            1 => __DIR__ . '/..' . '/doctrine/common/src',
+            0 => __DIR__ . '/..' . '/doctrine/common/src',
+            1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
@@ -572,10 +572,13 @@ class ComposerStaticInit71e982b43d60b6ab0dabac294b9401d9
     );
 
     public static $classMap = array (
-        'App\\Controller\\AccueilController' => __DIR__ . '/../..' . '/src/Controller/AccueilController.php',
         'App\\Controller\\AdminController' => __DIR__ . '/../..' . '/src/Controller/AdminController.php',
-        'App\\Controller\\ProgController' => __DIR__ . '/../..' . '/src/Controller/ProgController.php',
+        'App\\Controller\\ContactController' => __DIR__ . '/../..' . '/src/Controller/ContactController.php',
+        'App\\Controller\\IndexController' => __DIR__ . '/../..' . '/src/Controller/IndexController.php',
+        'App\\Controller\\PanierController' => __DIR__ . '/../..' . '/src/Controller/PanierController.php',
+        'App\\Controller\\ProgrammationController' => __DIR__ . '/../..' . '/src/Controller/ProgrammationController.php',
         'App\\Controller\\RegistrationController' => __DIR__ . '/../..' . '/src/Controller/RegistrationController.php',
+        'App\\Controller\\SallesController' => __DIR__ . '/../..' . '/src/Controller/SallesController.php',
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
         'App\\Form\\RegistrationFormType' => __DIR__ . '/../..' . '/src/Form/RegistrationFormType.php',

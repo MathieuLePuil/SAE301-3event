@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* ./base.html.twig */
+/* base.html.twig */
 class __TwigTemplate_2e28938bc97b201051005636635acfba extends Template
 {
     private $source;
@@ -38,10 +38,10 @@ class __TwigTemplate_2e28938bc97b201051005636635acfba extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "./base.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "./base.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -71,10 +71,10 @@ class __TwigTemplate_2e28938bc97b201051005636635acfba extends Template
     <body>
     ";
         // line 18
-        $this->loadTemplate("__composants/menu.html.twig", "./base.html.twig", 18)->display($context);
+        $this->loadTemplate("__composants/menu.html.twig", "base.html.twig", 18)->display($context);
         // line 19
         echo "    ";
-        $this->loadTemplate("__composants/carrousel.html.twig", "./base.html.twig", 19)->display($context);
+        $this->loadTemplate("__composants/carrousel.html.twig", "base.html.twig", 19)->display($context);
         // line 20
         echo "    <main>
         ";
@@ -84,7 +84,7 @@ class __TwigTemplate_2e28938bc97b201051005636635acfba extends Template
         echo "    </main>
     ";
         // line 23
-        $this->loadTemplate("__composants/footer.html.twig", "./base.html.twig", 23)->display($context);
+        $this->loadTemplate("__composants/footer.html.twig", "base.html.twig", 23)->display($context);
         // line 24
         echo "    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
@@ -185,7 +185,7 @@ class __TwigTemplate_2e28938bc97b201051005636635acfba extends Template
 
     public function getTemplateName()
     {
-        return "./base.html.twig";
+        return "base.html.twig";
     }
 
     public function isTraitable()
@@ -228,6 +228,6 @@ class __TwigTemplate_2e28938bc97b201051005636635acfba extends Template
     <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
     </body>
 </html>
-", "./base.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\base.html.twig");
     }
 }
