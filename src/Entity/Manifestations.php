@@ -41,8 +41,8 @@ class Manifestations
     #[ORM\Column(length: 5)]
     private ?string $manif_horaire = null;
 
-    #[ORM\Column]
-    private ?int $manif_lieu = null;
+    #[ORM\ManyToOne(inversedBy: 'manifestations')]
+    private ?Salles $manif_lieu = null;
 
     public function getId(): ?int
     {
@@ -157,12 +157,12 @@ class Manifestations
         return $this;
     }
 
-    public function getManifLieu(): ?int
+    public function getManifLieu(): ?Salles
     {
         return $this->manif_lieu;
     }
 
-    public function setManifLieu(int $manif_lieu): self
+    public function setManifLieu(?Salles $manif_lieu): self
     {
         $this->manif_lieu = $manif_lieu;
 

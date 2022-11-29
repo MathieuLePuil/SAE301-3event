@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="70a86207-c8f7-46a1-a969-c892b820225c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ManifestationsCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ManifestationsCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Manifestations.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Manifestations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +171,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/B.U.T_MMI/COURS/Semestre_3/SAE/SAE301/SAE301-3event&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Logiciel/WAMP/www/SAE301-3event&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -205,7 +209,13 @@
       <workItem from="1669634748282" duration="89000" />
       <workItem from="1669641689614" duration="1192000" />
       <workItem from="1669643224029" duration="5203000" />
-      <workItem from="1669705622029" duration="3639000" />
+      <workItem from="1669705622029" duration="4618000" />
+      <workItem from="1669711353111" duration="1815000" />
+      <workItem from="1669713295749" duration="575000" />
+      <workItem from="1669713906593" duration="568000" />
+      <workItem from="1669714498880" duration="222000" />
+      <workItem from="1669718738272" duration="900000" />
+      <workItem from="1669727641775" duration="1005000" />
     </task>
     <servers />
   </component>
