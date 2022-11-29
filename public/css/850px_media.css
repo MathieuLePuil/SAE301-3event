@@ -73,8 +73,13 @@ and (max-width: 850px) {
     }
     i{
         color: black;
+        padding: 1em;
     }
     .prog_box{
         flex-direction: column;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
     }
 }

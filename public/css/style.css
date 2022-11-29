@@ -15,6 +15,9 @@ main{
 .toggle{
     display: none;
 }
+#menu_logo{
+    display: none;
+}
 #menu_start img{
     height: 60px;
 }
@@ -213,4 +216,9 @@ footer p{
     transform: translate(0,5%);
     transition-property: all;
     transition-duration: 1s;
+}
+.prog_card:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 2s;
 }
