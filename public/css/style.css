@@ -201,6 +201,16 @@ footer p{
 .prog_box div img{
     margin: .7em;
 }
-.prog_card :hover{
-
+.prog_card{
+    text-align: center;
+}
+.prog_data{
+    opacity: 0;
+    transform: translate(0,-20%);
+}
+.prog_card:hover .prog_data{
+    opacity: 1;
+    transform: translate(0,5%);
+    transition-property: all;
+    transition-duration: 1s;
 }
