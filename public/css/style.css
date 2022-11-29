@@ -198,6 +198,9 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-#football img, #spectacle img, #concert img{
+.prog_box div img{
     margin: .7em;
+}
+.prog_card :hover{
+
 }
