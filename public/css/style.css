@@ -12,9 +12,11 @@ main{
 }
 /*Initialisation*/
 
+.toggle{
+    display: none;
+}
 #menu_start img{
     height: 60px;
-    margin-right: 2em;
 }
 #menu_start ul{
     align-items: center;
