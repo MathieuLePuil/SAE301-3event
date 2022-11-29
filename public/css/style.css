@@ -17,7 +17,6 @@ main{
     margin-right: 2em;
 }
 #menu_start ul{
-    height: 80px;
     align-items: center;
     display: flex;
     list-style: none;
@@ -48,7 +47,6 @@ nav{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    height: 80px;
 }
 /*Barre de navigation*/
 
