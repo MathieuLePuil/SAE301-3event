@@ -192,8 +192,9 @@ footer p{
 
 /*Panier*/
 
-#football, #spectacle, #concert{
+.prog_box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
