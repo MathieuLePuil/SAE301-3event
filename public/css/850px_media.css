@@ -82,4 +82,9 @@ and (max-width: 850px) {
         display: flex;
         justify-content: space-between;
     }
+
+    .prog_data{
+        opacity: 1;
+    }
+
 }
