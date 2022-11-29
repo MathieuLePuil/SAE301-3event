@@ -1,4 +1,8 @@
 <nav>
+    <div class="toggle">
+        <i class="fas fa-bars ouvrir"></i>
+        <i class="fas fa-times fermer"></i>
+    </div>
     <div id="menu_start" >
         <ul class="menu">
             <li><a href="{{ path('app_index') }}"><img src="{{ asset('images/logo/3event.png') }}" alt=""></a></li>
@@ -8,15 +12,11 @@
             <li><a href="{{ path('app_contact') }}">Contactez-nous</a></li>
         </ul>
     </div>
-    <div class="toggle">
-        <i class="fas fa-bars ouvrir"></i>
-        <i class="fas fa-times fermer"></i>
-    </div>
-    <div id="menu_end">
-        <ul class="menutest">
-            <li><input type="text"></li>
-            <li><a href="{{ path('app_panier') }}"><img src="{{ asset('images/ico/panier.svg') }}" alt="Panier"></a></li>
-            <li><a href="#"><img src="{{ asset('images/ico/profil.svg') }}" alt="Profil"></a></li>
-        </ul>
-    </div>
+{#    <div id="menu_end">#}
+{#        <ul class="menutest">#}
+{#            <li><input type="text"></li>#}
+{#            <li><a href="{{ path('app_panier') }}"><img src="{{ asset('images/ico/panier.svg') }}" alt="Panier"></a></li>#}
+{#            <li><a href="#"><img src="{{ asset('images/ico/profil.svg') }}" alt="Profil"></a></li>#}
+{#        </ul>#}
+{#    </div>#}
 </nav>
