@@ -12,12 +12,16 @@ main{
 }
 /*Initialisation*/
 
+.toggle{
+    display: none;
+}
+#menu_logo{
+    display: none;
+}
 #menu_start img{
     height: 60px;
-    margin-right: 2em;
 }
 #menu_start ul{
-    height: 80px;
     align-items: center;
     display: flex;
     list-style: none;
@@ -48,13 +52,35 @@ nav{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    height: 80px;
+}
+
+.nav_link {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav_link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 /*Barre de navigation*/
 
 footer{
     width: 100vw;
-    height: 220px;
     background-color: #393333;
     text-align: center;
     color: white;
@@ -193,11 +219,30 @@ footer p{
 
 /*Panier*/
 
-#football, #spectacle, #concert{
+.prog_box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-#football img, #spectacle img, #concert img{
+.prog_box div img{
     margin: .7em;
+}
+.prog_card{
+    text-align: center;
+}
+.prog_data{
+    opacity: 0;
+    transform: translate(0,-20%);
+}
+.prog_card:hover .prog_data{
+    opacity: 1;
+    transform: translate(0,5%);
+    transition-property: all;
+    transition-duration: 1s;
+}
+.prog_card:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 2s;
 }

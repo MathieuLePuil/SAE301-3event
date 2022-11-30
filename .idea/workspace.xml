@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="04d990b8-e9a0-40a0-be3f-ba361372d614" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgrammationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgrammationController.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/__composants/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__composants/menu.html.twig" afterDir="false" />
+>>>>>>> view
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,8 +213,11 @@
       <workItem from="1669196573968" duration="655000" />
       <workItem from="1669198586115" duration="1808000" />
       <workItem from="1669647739342" duration="16347000" />
+<<<<<<< HEAD
       <workItem from="1669792036848" duration="4448000" />
       <workItem from="1669798085750" duration="1187000" />
+=======
+>>>>>>> view
     </task>
     <servers />
   </component>
