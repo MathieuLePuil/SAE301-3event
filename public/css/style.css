@@ -231,6 +231,10 @@ footer p{
 .prog_card{
     text-align: center;
 }
+.prog_card img{
+    width: 20%;
+    height: auto;
+}
 .prog_data{
     opacity: 0;
     transform: translate(0,-20%);
