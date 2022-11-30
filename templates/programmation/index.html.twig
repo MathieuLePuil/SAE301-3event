@@ -3,82 +3,15 @@
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-    <h2>Concerts</h2>
-    <div id="concert" class="prog_box">
-{#        <img src="{{ asset('images/ico/fleche_gauche.svg') }}" alt="">#}
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
+    <div class="prog_box">
+    {% for i in prog %}
+            <div class="prog_card">
+                <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="">
+                <div class="prog_data">
+                    <p>Date : {{ i.manifDate }}</p>
+                    <a href="#">Réserver</a>
+                </div>
             </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-{#        <img src="{{ asset('images/ico/fleche_droite.svg') }}" alt="">#}
-    </div>
-    <h2>Football</h2>
-    <div id="football" class="prog_box">
-{#        <img src="{{ asset('images/ico/fleche_gauche.svg') }}" alt="">#}
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-{#        <img src="{{ asset('images/ico/fleche_droite.svg') }}" alt="">#}
-    </div>
-    <h2>Spectacles</h2>
-    <div id="spectacle" class="prog_box">
-{#        <img src="{{ asset('images/ico/fleche_gauche.svg') }}" alt="">#}
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-{#        <img src="{{ asset('images/ico/fleche_droite.svg') }}" alt="">#}
+    {% endfor %}
     </div>
 {% endblock %}
