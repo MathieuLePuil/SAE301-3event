@@ -198,3 +198,15 @@ d45dcf,::1,GET,http://localhost/SAE301-3event/public/index.php/admin?crudAction=
 bde186,::1,GET,http://localhost:8000/SAE301-3event/public/index.php/admin,1669729125,b5c4ba,404
 b5c4ba,::1,GET,http://localhost:8000/SAE301-3event/public/index.php/admin,1669729126,,404
 24d76a,::1,GET,http://localhost:8000/,1669729134,,200
+13e086,::1,GET,http://localhost:8080/SAE301-3event/public/,1669735982,,200
+221f78,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/admin,1669736074,,302
+166e40,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/login,1669736075,,200
+ac59ca,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/login,1669736091,cea5c1,500
+cea5c1,::1,POST,http://localhost:8080/SAE301-3event/public/index.php/login,1669736091,,500
+6142c1,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/login,1669736145,e0c1ee,500
+e0c1ee,::1,POST,http://localhost:8080/SAE301-3event/public/index.php/login,1669736145,,500
+ebb984,::1,POST,http://localhost:8080/SAE301-3event/public/index.php/login,1669736188,,302
+99f18b,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/admin,1669736190,,200
+094778,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CManifestationsCrudController&menuIndex=1&submenuIndex=-1,1669736194,d0413e,500
+d0413e,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CManifestationsCrudController&menuIndex=1&submenuIndex=-1,1669736194,,500
+d60ade,::1,GET,http://localhost:8080/SAE301-3event/public/,1669792361,,200
