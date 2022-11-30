@@ -3,22 +3,12 @@
 {% block title %}Nos salles{% endblock %}
 
 {% block body %}
-    <div class="salle">
-        <img src="#" alt="">
-        <h2>Stade de l'Aube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href="#">En voir plus</a>
-    </div>
-    <div class="salle">
-        <img src="#" alt="">
-        <h2>Le cube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href="#">En voir plus</a>
-    </div>
-    <div class="salle">
-        <img src="#" alt="">
-        <h2>Théâtre de Champagne</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href="#">En voir plus</a>
-    </div>
+    {% for i in salles %}
+        <div class="salle">
+            <img src="#" alt="{{ i.salleNom }}">
+            <h2>{{ i.salleNom }}</h2>
+            <p>{{ i.salleAdresse }}</p>
+            <a href="#">En voir plus</a>
+        </div>
+    {% endfor %}
 {% endblock %}
