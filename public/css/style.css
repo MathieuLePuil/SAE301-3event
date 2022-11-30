@@ -245,3 +245,40 @@ footer p{
     transition-property: all;
     transition-duration: 2s;
 }
+
+/* PAGE EVENT */
+
+.event_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event_info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 5em 2em 5em;
+    flex-wrap: wrap;
+}
+
+.event_info h1, .event_info h2 {
+    text-align: right;
+}
+
+.event_info img {
+    width: 150%;
+    height: 150%;
+}
+
+.event_info h1 {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+
+.event_info h2 {
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
