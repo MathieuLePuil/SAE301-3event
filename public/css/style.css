@@ -266,14 +266,14 @@ footer p{
 
 @media screen and (max-width: 1250px) {
     .event_info img {
-        width: 110%;
-        height: 110%;
+        width: 120%;
+        height: 120%;
     }
     .event_info {
         margin: 0 2em 2em 2em;
     }
     .event_nom_lieu_prix {
-        height: 269px;
+        height: 294px;
     }
 }
 
@@ -294,6 +294,16 @@ footer p{
     }
     .event_info h2 {
         font-size: 20px;
+    }
+    .event_info {
+        margin: 0 1em 2em 1em;
+    }
+    .event_info img {
+        width: 110%;
+        height: 110%;
+    }
+    .event_nom_lieu_prix {
+        height: 270px;
     }
 }
 
@@ -368,4 +378,34 @@ footer p{
     font-family: 'Montserrat';
     font-size: 17px;
     font-weight: 900;
+}
+
+@media screen and (max-width: 450px) {
+    .event_info h1 {
+        font-size: 40px;
+    }
+    .event_info h2 {
+        font-size: 17px;
+    }
+    .event_info {
+        margin: 0 0.5em 2em 0.5em;
+    }
+    .event_info img {
+        width: 90%;
+        height: 90%;
+    }
+    .event_nom_lieu_prix {
+        height: 200px;
+    }
+    .event_reserver h3 {
+        font-size: 25px;
+        margin-right: 0.5em;
+    }
+    .event_description {
+        text-align: center;
+        margin: 0 1em 2em 1em;
+    }
+    .back_home {
+        margin: 0 1.5em 2em 1.5em;
+    }
 }
