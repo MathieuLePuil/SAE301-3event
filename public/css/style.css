@@ -38,7 +38,15 @@ main{
     text-decoration: none;
     color: black;
 }
-li input{
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.search {
+    display: flex;
+    padding: 5px;
     border: 2px solid #000000;
     border-radius: 63px;
 }
