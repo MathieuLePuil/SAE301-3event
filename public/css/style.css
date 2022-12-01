@@ -151,71 +151,8 @@ footer p{
 }
 /*Footer*/
 
-.cartCard{
-    margin: 5em;
-    background-color: #D9D9D9;
-    height: 310px;
-    border-radius: 60px;
-}
-.cartCard h2{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
 
-    color: #000000;
-}
-.details{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 135.9%;
-    color: #000000;
-}
-.qte{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 135.9%;
-    color: #000000;
-}
-.prix{
-    display: flex;
-}
-.prixTotal{
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 135.9%;
-    color: #000000;
-    align-items: baseline;
-    margin-right: 2em;
-}
-.command{
-    background: #2298BC;
-    border-radius: 80px;
-    display: block;
-    padding: .5em;
-    margin-left: 1em;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-}
-.topCart{
-    display: flex;
-    justify-content: space-evenly;
-}
-.cartCard img{
-    width: 388px;
-    height: 245px;
-}
+
 #arianne ul{
     display: flex;
     list-style: none;
