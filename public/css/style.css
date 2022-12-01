@@ -151,13 +151,117 @@ footer p{
 }
 /*Footer*/
 
+.panier-card{
+    display: flex;
+    justify-content: space-around;
+    margin: 5em;
+    background-color: #D9D9D9;
+    height: 310px;
+    border-radius: 60px;
+}
 
+.panier-img {
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.panier-img img {
+    width: 90%;
+    height: 90%;
+}
+
+.panier-event-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.panier-event-info h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+}
+
+.panier-event-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.panier-event-info p {
+    margin-top: -10px;
+    font-size: 25px;
+}
+
+.panier-event-info h2 {
+    margin-bottom: 50px;
+}
+
+.panier-event-info p {
+    margin-top: -10px;
+}
+
+.panier_place {
+    margin-top: 1.5em;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.prixTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 1.5em;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.bouton_commander {
+    display: flex;
+    width: 160px;
+    height: 40px;
+    background-color: #2298BC;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_commander:hover {
+    display: flex;
+    width: 170px;
+    height: 50px;
+    background-color: #2298BC;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_commander a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 900;
+}
 
 #arianne ul{
     display: flex;
     list-style: none;
     justify-content: center;
 }
+
+
 
 /*Panier*/
 
@@ -331,6 +435,11 @@ footer p{
     background-color: #2298BC;
     border-radius: 20px;
     align-items: center;
+}
+
+.back_home:hover {
+    width: 230px;
+    height: 70px;
 }
 
 .back_home a {
