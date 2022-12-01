@@ -53,7 +53,10 @@ nav{
     font-size: 16px;
     line-height: 20px;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> dataInt
 .nav_link {
     display: inline-block;
     position: relative;
@@ -85,6 +88,11 @@ footer{
     text-align: center;
     color: white;
     padding-top: 3em;
+    margin-bottom: -50%;
+}
+
+hr {
+    border-top: 1px solid white ;
 }
 footer img{
     width: 137px;
@@ -244,4 +252,186 @@ footer p{
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 2s;
+}
+
+/* PAGE EVENT */
+
+.event_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.event_nom_lieu_prix {
+    display: flex;
+    height: 367px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -1%;
+}
+
+.event_info {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 5em 2em 5em;
+    flex-wrap: wrap;
+}
+
+.event_info h1, .event_info h2 {
+    text-align: right;
+}
+
+.event_info img {
+    width: 150%;
+    height: 150%;
+}
+
+@media screen and (max-width: 1250px) {
+    .event_info img {
+        width: 120%;
+        height: 120%;
+    }
+    .event_info {
+        margin: 0 2em 2em 2em;
+    }
+    .event_nom_lieu_prix {
+        height: 294px;
+    }
+}
+
+.event_info h1 {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+
+.event_info h2 {
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 1000px) {
+    .event_info h1 {
+        font-size: 50px;
+    }
+    .event_info h2 {
+        font-size: 20px;
+    }
+    .event_info {
+        margin: 0 1em 2em 1em;
+    }
+    .event_info img {
+        width: 110%;
+        height: 110%;
+    }
+    .event_nom_lieu_prix {
+        height: 270px;
+    }
+}
+
+.event_reserver {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.event_reserver h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    margin-right: 1em;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_reserver {
+    display: flex;
+    width: 150px;
+    background-color: #2298BC;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_reserver:hover {
+    display: flex;
+    width: 160px;
+    height: 60px;
+    background-color: #2298BC;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_reserver a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.event_description {
+    display: flex;
+    justify-content: center;
+    margin: 0 5em 2em 5em;
+}
+
+.backhomebutton {
+    display: flex;
+    justify-content: center;
+}
+
+.back_home {
+    display: flex;
+    justify-content: center;
+    margin: 0 5em 2em 5em;
+    width: 220px;
+    height: 60px;
+    background-color: #2298BC;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.back_home a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 450px) {
+    .event_info h1 {
+        font-size: 40px;
+    }
+    .event_info h2 {
+        font-size: 17px;
+    }
+    .event_info {
+        margin: 0 0.5em 2em 0.5em;
+    }
+    .event_info img {
+        width: 90%;
+        height: 90%;
+    }
+    .event_nom_lieu_prix {
+        height: 200px;
+    }
+    .event_reserver h3 {
+        font-size: 25px;
+        margin-right: 0.5em;
+    }
+    .event_description {
+        text-align: center;
+        margin: 0 1em 2em 1em;
+    }
+    .back_home {
+        margin: 0 1.5em 2em 1.5em;
+    }
 }

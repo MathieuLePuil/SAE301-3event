@@ -87,4 +87,24 @@ and (max-width: 850px) {
         opacity: 1;
     }
 
+    /* PAGE EVENT */
+
+    .event_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event_info h1, .event_info h2 {
+        text-align: center;
+    }
+
+    .event_nom_lieu_prix {
+        margin-top: 10px;
+    }
+
+    .event_img {
+        display: flex;
+        justify-content: center;
+    }
 }
