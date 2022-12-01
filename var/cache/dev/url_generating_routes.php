@@ -19,6 +19,7 @@ return [
     'app_admin' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin1']], [], [], []],
     'admin' => [[], ['_controller' => 'App\\Controller\\Admin\\DashboardController::index'], [], [['text', '/admin']], [], [], []],
     'app_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
+    'app_event' => [[], ['_controller' => 'App\\Controller\\EventController::index'], [], [['text', '/event']], [], [], []],
     'app_index' => [[], ['_controller' => 'App\\Controller\\IndexController::index'], [], [['text', '/']], [], [], []],
     'app_panier' => [[], ['_controller' => 'App\\Controller\\PanierController::index'], [], [['text', '/panier']], [], [], []],
     'app_programmation' => [[], ['_controller' => 'App\\Controller\\ProgrammationController::index'], [], [['text', '/programmation']], [], [], []],

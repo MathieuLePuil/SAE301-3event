@@ -45,19 +45,19 @@ class __TwigTemplate_041ea944a8b0d927334f165a58775414 extends Template
         <div class=\"carousel-item active\">
             <img class=\"d-block w-100\" src=\"";
         // line 4
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/banner.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/BANNIERE ELECTRIC CALLBOY.png"), "html", null, true);
         echo "\" alt=\"First slide\">
         </div>
         <div class=\"carousel-item\">
             <img class=\"d-block w-100\" src=\"";
         // line 7
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/banner.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/BANNIERE IMAGINE DRAGONS.png"), "html", null, true);
         echo "\" alt=\"Second slide\">
         </div>
         <div class=\"carousel-item\">
             <img class=\"d-block w-100\" src=\"";
         // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/banner.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/BANNIERE RAMMSTEIN.png"), "html", null, true);
         echo "\" alt=\"Third slide\">
         </div>
     </div>
@@ -98,13 +98,13 @@ class __TwigTemplate_041ea944a8b0d927334f165a58775414 extends Template
         return new Source("<div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
     <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
-            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/banner.png') }}\" alt=\"First slide\">
+            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/BANNIERE ELECTRIC CALLBOY.png') }}\" alt=\"First slide\">
         </div>
         <div class=\"carousel-item\">
-            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/banner.png') }}\" alt=\"Second slide\">
+            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/BANNIERE IMAGINE DRAGONS.png') }}\" alt=\"Second slide\">
         </div>
         <div class=\"carousel-item\">
-            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/banner.png') }}\" alt=\"Third slide\">
+            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/BANNIERE RAMMSTEIN.png') }}\" alt=\"Third slide\">
         </div>
     </div>
     <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">
@@ -115,6 +115,6 @@ class __TwigTemplate_041ea944a8b0d927334f165a58775414 extends Template
         <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
         <span class=\"sr-only\">Next</span>
     </a>
-</div>", "__composants/carrousel.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\__composants\\carrousel.html.twig");
+</div>", "__composants/carrousel.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\__composants\\carrousel.html.twig");
     }
 }

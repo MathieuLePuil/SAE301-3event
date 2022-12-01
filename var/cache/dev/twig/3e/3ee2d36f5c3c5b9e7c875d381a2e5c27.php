@@ -85,76 +85,31 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h2>Concerts</h2>
-    <div id=\"concert\">
+        echo "<div class=\"prog_box\">
+    ";
+        // line 7
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 7, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
+            // line 8
+            echo "    <div class=\"prog_card\">
         <img src=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/fleche_gauche.svg"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 12
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/fleche_droite.svg"), "html", null, true);
-        echo "\" alt=\"\">
+            // line 9
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("images/affiche/" . twig_get_attribute($this->env, $this->source, $context["i"], "manifAffiche", [], "any", false, false, false, 9))), "html", null, true);
+            echo "\" alt=\"\">
+        <div class=\"prog_data\">
+            <p>Date : ";
+            // line 11
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 11), "html", null, true);
+            echo "</p>
+            <a href=\"#\">Réserver</a>
+        </div>
     </div>
-    <h2>Football</h2>
-    <div id=\"football\">
-        <img src=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/fleche_gauche.svg"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 18
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 19
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 20
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/fleche_droite.svg"), "html", null, true);
-        echo "\" alt=\"\">
-    </div>
-    <h2>Spectacles</h2>
-    <div id=\"spectacle\">
-        <img src=\"";
-        // line 24
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/fleche_gauche.svg"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 25
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 26
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 27
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-        <img src=\"";
-        // line 28
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/fleche_droite.svg"), "html", null, true);
-        echo "\" alt=\"\">
-    </div>
-";
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -175,7 +130,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 
     public function getDebugInfo()
     {
-        return array (  154 => 28,  150 => 27,  146 => 26,  142 => 25,  138 => 24,  131 => 20,  127 => 19,  123 => 18,  119 => 17,  115 => 16,  108 => 12,  104 => 11,  100 => 10,  96 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  103 => 11,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -185,31 +140,17 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-    <h2>Concerts</h2>
-    <div id=\"concert\">
-        <img src=\"{{ asset('images/ico/fleche_gauche.svg') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/ico/fleche_droite.svg') }}\" alt=\"\">
+<div class=\"prog_box\">
+    {% for i in prog %}
+    <div class=\"prog_card\">
+        <img src=\"{{ asset('images/affiche/' ~ i.manifAffiche ) }}\" alt=\"\">
+        <div class=\"prog_data\">
+            <p>Date : {{ i.manifDate }}</p>
+            <a href=\"#\">Réserver</a>
+        </div>
     </div>
-    <h2>Football</h2>
-    <div id=\"football\">
-        <img src=\"{{ asset('images/ico/fleche_gauche.svg') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/ico/fleche_droite.svg') }}\" alt=\"\">
-    </div>
-    <h2>Spectacles</h2>
-    <div id=\"spectacle\">
-        <img src=\"{{ asset('images/ico/fleche_gauche.svg') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-        <img src=\"{{ asset('images/ico/fleche_droite.svg') }}\" alt=\"\">
-    </div>
+    {% endfor %}
 {% endblock %}
-", "programmation/index.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\programmation\\index.html.twig");
+", "programmation/index.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\programmation\\index.html.twig");
     }
 }

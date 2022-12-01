@@ -153,6 +153,6 @@ class __TwigTemplate_cee226673ec698fe7f386461a8991e6a extends Template
         <button type=\"submit\" class=\"btn\">Register</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
-", "registration/register.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\registration\\register.html.twig");
     }
 }

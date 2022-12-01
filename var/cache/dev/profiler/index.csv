@@ -210,3 +210,15 @@ ebb984,::1,POST,http://localhost:8080/SAE301-3event/public/index.php/login,16697
 094778,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CManifestationsCrudController&menuIndex=1&submenuIndex=-1,1669736194,d0413e,500
 d0413e,::1,GET,http://localhost:8080/SAE301-3event/public/index.php/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CManifestationsCrudController&menuIndex=1&submenuIndex=-1,1669736194,,500
 d60ade,::1,GET,http://localhost:8080/SAE301-3event/public/,1669792361,,200
+518cf1,::1,GET,http://localhost/public/index.php/programmation,1669891224,,200
+63a272,::1,GET,http://localhost/public/index.php/login,1669891231,,200
+062f1b,::1,GET,http://localhost/public/index.php/login,1669891238,6bc3cf,500
+6bc3cf,::1,POST,http://localhost/public/index.php/login,1669891238,,500
+184a6b,::1,GET,http://localhost/public/index.php/programmation,1669891248,,200
+e59324,::1,GET,http://localhost/public/index.php/programmation,1669891301,,200
+725ce2,::1,GET,http://localhost/public/index.php/event?id_event=1,1669891324,,200
+94af32,::1,GET,http://localhost/public/index.php/programmation,1669891584,,200
+d76f01,::1,GET,http://localhost/public/index.php/programmation,1669891885,8677d4,500
+8677d4,::1,GET,http://localhost/public/index.php/programmation,1669891885,,500
+4f0a14,::1,GET,http://localhost/public/index.php/programmation,1669891902,,200
+b8f8a1,::1,GET,http://localhost/public/index.php/programmation,1669892046,,200

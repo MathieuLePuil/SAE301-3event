@@ -70,6 +70,6 @@ class __TwigTemplate_950b30554639241fb2cab116194342d1 extends Template
 
     public function getSourceContext()
     {
-        return new Source("{% extends '@EasyAdmin/page/content.html.twig' %}", "admin/dashboard.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\admin\\dashboard.html.twig");
+        return new Source("{% extends '@EasyAdmin/page/content.html.twig' %}", "admin/dashboard.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\admin\\dashboard.html.twig");
     }
 }

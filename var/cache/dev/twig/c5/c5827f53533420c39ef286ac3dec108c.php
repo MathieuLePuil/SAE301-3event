@@ -93,10 +93,23 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
             <li><a href=\"#\">Validation</a></li>
         </ul>
     </div>
-    <div class=\"cartCard\">
-        <div class=\"topCart\">
+    <div class=\"panier-card\">
+        <div class=\"panier-img\">
             <img src=\"";
         // line 16
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
+        echo "\" alt=\"Affiche\">
+        </div>
+        <div class=\"panier-event-info\">
+
+        </div>
+        <div class=\"panier_place\">
+
+        </div>
+
+        <div class=\"topCart\">
+            <img src=\"";
+        // line 26
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
         echo "\" alt=\"\">
             <div class=\"details\">
@@ -143,7 +156,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  100 => 16,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  113 => 26,  100 => 16,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -161,7 +174,17 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
             <li><a href=\"#\">Validation</a></li>
         </ul>
     </div>
-    <div class=\"cartCard\">
+    <div class=\"panier-card\">
+        <div class=\"panier-img\">
+            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"Affiche\">
+        </div>
+        <div class=\"panier-event-info\">
+
+        </div>
+        <div class=\"panier_place\">
+
+        </div>
+
         <div class=\"topCart\">
             <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
             <div class=\"details\">
@@ -188,6 +211,6 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
     </div>
     <a href=\"#\" class=\"command\">Continuer mes achats</a>
 {% endblock %}
-", "panier/index.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\panier\\index.html.twig");
+", "panier/index.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\panier\\index.html.twig");
     }
 }

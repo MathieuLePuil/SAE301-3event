@@ -41,40 +41,44 @@ class __TwigTemplate_fbc0e8cca750fc0bdc81c33239a87a7d extends Template
 
         // line 1
         echo "<nav>
-    <div id=\"menu_start\">
-        <ul>
+    <div class=\"toggle\">
+        <i class=\"fas fa-bars ouvrir\"></i>
+        <i class=\"fas fa-times fermer\"></i>
+    </div>
+    <div id=\"menu_start\" >
+        <ul class=\"menu\">
             <li><a href=\"";
-        // line 4
+        // line 8
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
         echo "\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo/3event.png"), "html", null, true);
         echo "\" alt=\"\"></a></li>
             <li><a href=\"";
-        // line 5
+        // line 9
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_programmation");
-        echo "\">Programmation</a></li>
+        echo "\" class=\"nav_link\">Programmation</a></li>
             <li><a href=\"";
-        // line 6
+        // line 10
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_salles");
-        echo "\">Nos salles</a></li>
-            <li><a href=\"#\">Infos pratique</a></li>
+        echo "\" class=\"nav_link\">Nos salles</a></li>
+            <li><a href=\"#\" class=\"nav_link\">Infos pratique</a></li>
             <li><a href=\"";
-        // line 8
+        // line 12
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
-        echo "\">Contactez-nous</a></li>
+        echo "\" class=\"nav_link\">Contactez-nous</a></li>
         </ul>
     </div>
     <div id=\"menu_end\">
-        <ul>
+        <ul class=\"menutest\">
             <li><input type=\"text\"></li>
             <li><a href=\"";
-        // line 14
+        // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_panier");
         echo "\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/panier.svg"), "html", null, true);
         echo "\" alt=\"Panier\"></a></li>
             <li><a href=\"#\"><img src=\"";
-        // line 15
+        // line 19
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/profil.svg"), "html", null, true);
         echo "\" alt=\"Profil\"></a></li>
         </ul>
@@ -100,28 +104,32 @@ class __TwigTemplate_fbc0e8cca750fc0bdc81c33239a87a7d extends Template
 
     public function getDebugInfo()
     {
-        return array (  78 => 15,  72 => 14,  63 => 8,  58 => 6,  54 => 5,  48 => 4,  43 => 1,);
+        return array (  82 => 19,  76 => 18,  67 => 12,  62 => 10,  58 => 9,  52 => 8,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<nav>
-    <div id=\"menu_start\">
-        <ul>
+    <div class=\"toggle\">
+        <i class=\"fas fa-bars ouvrir\"></i>
+        <i class=\"fas fa-times fermer\"></i>
+    </div>
+    <div id=\"menu_start\" >
+        <ul class=\"menu\">
             <li><a href=\"{{ path('app_index') }}\"><img src=\"{{ asset('images/logo/3event.png') }}\" alt=\"\"></a></li>
-            <li><a href=\"{{ path('app_programmation') }}\">Programmation</a></li>
-            <li><a href=\"{{ path('app_salles') }}\">Nos salles</a></li>
-            <li><a href=\"#\">Infos pratique</a></li>
-            <li><a href=\"{{ path('app_contact') }}\">Contactez-nous</a></li>
+            <li><a href=\"{{ path('app_programmation') }}\" class=\"nav_link\">Programmation</a></li>
+            <li><a href=\"{{ path('app_salles') }}\" class=\"nav_link\">Nos salles</a></li>
+            <li><a href=\"#\" class=\"nav_link\">Infos pratique</a></li>
+            <li><a href=\"{{ path('app_contact') }}\" class=\"nav_link\">Contactez-nous</a></li>
         </ul>
     </div>
     <div id=\"menu_end\">
-        <ul>
+        <ul class=\"menutest\">
             <li><input type=\"text\"></li>
             <li><a href=\"{{ path('app_panier') }}\"><img src=\"{{ asset('images/ico/panier.svg') }}\" alt=\"Panier\"></a></li>
             <li><a href=\"#\"><img src=\"{{ asset('images/ico/profil.svg') }}\" alt=\"Profil\"></a></li>
         </ul>
     </div>
-</nav>", "__composants/menu.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\__composants\\menu.html.twig");
+</nav>", "__composants/menu.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\__composants\\menu.html.twig");
     }
 }

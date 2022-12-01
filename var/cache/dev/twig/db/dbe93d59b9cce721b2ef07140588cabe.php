@@ -133,6 +133,6 @@ class __TwigTemplate_d674962e0103170d3ca01754ebdc9afe extends Template
         </div>
     </div>
     <p>&copy; 2022 - Tous droits réservés</p>
-</footer>", "__composants/footer.html.twig", "D:\\Desktop\\B.U.T_MMI\\COURS\\Semestre_3\\SAE\\SAE301\\SAE301-3event\\templates\\__composants\\footer.html.twig");
+</footer>", "__composants/footer.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\__composants\\footer.html.twig");
     }
 }
