@@ -3,4 +3,35 @@ and (max-width: 1150px) {
     #menu_end{
         display: none;
     }
+
+    .panier-card{
+        margin: 1em;
+        height: 280px;
+    }
+
+    .panier-img {
+        margin-top: 2em;
+        margin-right: -5%;
+    }
+
+    .panier-img img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .panier-event-info {
+        margin-top: 2em;
+    }
+
+    .panier-event-info {
+        margin-right: -2%;
+    }
+
+    .panier-event-info p {
+        margin-top: -5px;
+    }
+
+    .panier_place {
+        margin-top: 2em;
+    }
 }

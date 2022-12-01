@@ -3,13 +3,13 @@
 {% block title %}Panier{% endblock %}
 
 {% block body %}
-    <div id="arianne">
-        <ul>
-            <li><a href="#">Panier</a></li>&gt
-            <li><a href="#">Connexion / Inscription</a></li>&gt
-            <li><a href="#">Paiement</a></li>&gt
-            <li><a href="#">Validation</a></li>
-        </ul>
+    <div class="ariane">
+        <div class="breadcrumb flat">
+            <a href="{{ path('app_panier') }}" class="active">Panier</a>
+            <a href="#">Connexion / Inscription</a>
+            <a href="#">Paiement</a>
+            <a href="#">Validation</a>
+        </div>
     </div>
     <div class="panier-card">
         <div class="panier-img">
