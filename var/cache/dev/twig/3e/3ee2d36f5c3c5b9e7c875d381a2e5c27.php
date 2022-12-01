@@ -102,7 +102,12 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
             // line 11
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 11), "html", null, true);
             echo "</p>
-            <a href=\"#\">Réserver</a>
+            <a href=\"";
+            // line 12
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_event");
+            echo "?id_event=";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 12), "html", null, true);
+            echo "\">Réserver</a>
         </div>
     </div>
     ";
@@ -110,6 +115,9 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 16
+        echo "</div>
+";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -130,7 +138,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 
     public function getDebugInfo()
     {
-        return array (  103 => 11,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  119 => 16,  107 => 12,  103 => 11,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -146,10 +154,11 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         <img src=\"{{ asset('images/affiche/' ~ i.manifAffiche ) }}\" alt=\"\">
         <div class=\"prog_data\">
             <p>Date : {{ i.manifDate }}</p>
-            <a href=\"#\">Réserver</a>
+            <a href=\"{{ path('app_event') }}?id_event={{ i.id }}\">Réserver</a>
         </div>
     </div>
     {% endfor %}
+</div>
 {% endblock %}
 ", "programmation/index.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\programmation\\index.html.twig");
     }

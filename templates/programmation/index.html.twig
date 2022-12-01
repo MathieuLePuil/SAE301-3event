@@ -9,8 +9,9 @@
         <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="">
         <div class="prog_data">
             <p>Date : {{ i.manifDate }}</p>
-            <a href="#">Réserver</a>
+            <a href="{{ path('app_event') }}?id_event={{ i.id }}">Réserver</a>
         </div>
     </div>
     {% endfor %}
+</div>
 {% endblock %}

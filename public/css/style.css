@@ -168,7 +168,9 @@ footer p{
     align-items: center;
 }
 .prog_box div img{
-    margin: .7em;
+    margin: 1em;
+    width: 25%;
+    height: auto;
 }
 .prog_card{
     text-align: center;
