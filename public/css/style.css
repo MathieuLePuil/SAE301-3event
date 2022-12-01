@@ -230,9 +230,14 @@ footer p{
 .prog_box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.prog_box div img {
+.prog_box div img{
     margin: .7em;
+}
+.prog_card{
+    text-align: center;
 }
 .prog_card img{
     width: 20%;
