@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70a86207-c8f7-46a1-a969-c892b820225c" name="Changes" comment="">
+    <list default="true" id="04d990b8-e9a0-40a0-be3f-ba361372d614" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
@@ -19,6 +20,14 @@
       <change beforePath="$PROJECT_DIR$/public/css/850px_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/850px_media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
 >>>>>>> 3d3187814e9d250e207c4896ab3523b8c25538f5
+=======
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProgrammationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgrammationController.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/__composants/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__composants/menu.html.twig" afterDir="false" />
+>>>>>>> view
+>>>>>>> dataInt
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,6 +249,7 @@
       <workItem from="1669198586115" duration="1808000" />
       <workItem from="1669647739342" duration="16347000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1669797976290" duration="595000" />
 <<<<<<< HEAD
 =======
@@ -250,6 +260,12 @@
       <workItem from="1669813985604" duration="4763000" />
       <workItem from="1669879139512" duration="1285000" />
 >>>>>>> 3d3187814e9d250e207c4896ab3523b8c25538f5
+=======
+      <workItem from="1669792036848" duration="4448000" />
+      <workItem from="1669798085750" duration="1187000" />
+=======
+>>>>>>> view
+>>>>>>> dataInt
     </task>
     <servers />
   </component>
