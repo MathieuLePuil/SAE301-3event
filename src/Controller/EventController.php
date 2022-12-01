@@ -17,7 +17,7 @@ class EventController extends AbstractController
         return $this->render('event/index.html.twig', [
             'controller_name' => 'EventController',
             'event' => $manifestationsRepository->findAll(),
-            'id' => $id +1
+            'id' => $id -1
         ]);
     }
 }

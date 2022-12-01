@@ -85,28 +85,31 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<div class=\"prog_box\">
+        echo "    ";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\DumpExtension']->dump($this->env, $context);
+        echo "
+<div class=\"prog_box\">
     ";
-        // line 7
+        // line 8
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 7, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 8, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 8
+            // line 9
             echo "    <div class=\"prog_card\">
         <img src=\"";
-            // line 9
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("images/affiche/" . twig_get_attribute($this->env, $this->source, $context["i"], "manifAffiche", [], "any", false, false, false, 9))), "html", null, true);
+            // line 10
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("images/affiche/" . twig_get_attribute($this->env, $this->source, $context["i"], "manifAffiche", [], "any", false, false, false, 10))), "html", null, true);
             echo "\" alt=\"\">
         <div class=\"prog_data\">
             <p>Date : ";
-            // line 11
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 11), "html", null, true);
+            // line 12
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 12), "html", null, true);
             echo "</p>
             <a href=\"";
-            // line 12
+            // line 13
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_event");
             echo "?id_event=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 12), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 13), "html", null, true);
             echo "\">Réserver</a>
         </div>
     </div>
@@ -115,7 +118,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 16
+        // line 17
         echo "</div>
 ";
         
@@ -138,7 +141,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 
     public function getDebugInfo()
     {
-        return array (  119 => 16,  107 => 12,  103 => 11,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  122 => 17,  110 => 13,  106 => 12,  101 => 10,  98 => 9,  94 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -148,6 +151,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
+    {{ dump() }}
 <div class=\"prog_box\">
     {% for i in prog %}
     <div class=\"prog_card\">

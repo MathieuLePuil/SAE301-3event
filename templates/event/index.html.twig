@@ -12,11 +12,11 @@
             <div>
                 <h1>{{ event[id].manifTitre }}</h1>
                 <h2>{{ event[id].manifDate }}</h2>
-                <h2>{{ event[id].manifLieu}}</h2>
+{#                <h2>{{ event[id].manifLieu}}</h2>#}
                 <h2>{{ event[id].manifHoraire }}</h2>
             </div>
             <div class="event_reserver">
-                <h3>{{ event[id].manifPrix }} €</h3>
+{#                <h3>{{ event[id].manifPrix }} €</h3>#}
                 <div class="bouton_reserver">
                     <a href="{{ path('app_event') }}?id_event={{ id }}">➕ RÉSERVER</a>
                 </div>
