@@ -175,6 +175,7 @@ footer p{
 .prog_card{
     text-align: center;
 }
+
 .prog_data{
     opacity: 0;
     transform: translate(0,-20%);
