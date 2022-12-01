@@ -3,29 +3,28 @@
 {% block title %}Rammstein{% endblock %}
 
 {% block body %}
-    {{ dump() }}
 <div class="event_page">
     <div class="event_info">
         <div class="event_img">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="Image de l'évènement">
+            <img src="{{ asset('images/affiche/'~ event[id].manifAffiche) }}" alt="Image de l'évènement" class="event_img">
         </div>
         <div class="event_nom_lieu_prix">
             <div>
-                <h1>Rammstein</h1>
-                <h2>Samedi 22 juillet 2023</h2>
-                <h2>Stade de l'Aube</h2>
-                <h2>20h</h2>
+                <h1>{{ event[id].manifTitre }}</h1>
+                <h2>{{ event[id].manifDate }}</h2>
+                <h2>{{ event[id].manifLieu}}</h2>
+                <h2>{{ event[id].manifHoraire }}</h2>
             </div>
             <div class="event_reserver">
-                <h3>84€</h3>
+                <h3>{{ event[id].manifPrix }} €</h3>
                 <div class="bouton_reserver">
-                    <a href="{{ path('app_event') }}?id_event=1">➕ RÉSERVER</a>
+                    <a href="{{ path('app_event') }}?id_event={{ id }}">➕ RÉSERVER</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="event_description">
-        <p>Rammstein accélère la cadence et continuera d’enflammer l’Europe en 2023 en passant notamment par le Stade de l'Aube, le 22 juillet 2023. Peu d’artistes dans le paysage musical actuel propose un live de cette ampleur, une scène magistrale nourrie par une profusion de feux d’artifice, d’explosions massives de fumée, orchestrées par une mise en scène chargée d’humour et de pathos.</p>
+        <p>{{ event[id].manifDescription }}</p>
     </div>
     <div class="backhomebutton">
         <div class="back_home">
