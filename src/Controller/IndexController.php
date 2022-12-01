@@ -14,7 +14,6 @@ class IndexController extends AbstractController
     public function index(ManifestationsRepository $manifestationsRepository): Response
     {
         $test = $manifestationsRepository->findAll();
-        dd($test);
         return $this->render('index/index.html.twig', [
             'controller_name' => 'IndexController',
         ]);
