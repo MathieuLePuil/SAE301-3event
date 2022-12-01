@@ -3,9 +3,20 @@ and (max-width: 850px) {
     body{
         overflow-x: hidden;
     }
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 1em;
+    }
     #topFooter{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
     }
     footer img{
         display: none;
@@ -51,7 +62,7 @@ and (max-width: 850px) {
         top: 0;
         left: 0;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         background: white;
         flex-direction: column;
         padding: 3rem;
@@ -62,7 +73,7 @@ and (max-width: 850px) {
     }
 
     .menu li a {
-        font-size: 2rem;
+        font-size: 17px;
     }
 
     .open .menu {
@@ -81,10 +92,35 @@ and (max-width: 850px) {
     nav{
         display: flex;
         justify-content: space-between;
+        height: 60px;
+    }
+
+    .fas {
+        margin-top: -18px;
     }
 
     .prog_data{
         opacity: 1;
     }
 
+    /* PAGE EVENT */
+
+    .event_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event_info h1, .event_info h2 {
+        text-align: center;
+    }
+
+    .event_nom_lieu_prix {
+        margin-top: 10px;
+    }
+
+    .event_img {
+        display: flex;
+        justify-content: center;
+    }
 }
