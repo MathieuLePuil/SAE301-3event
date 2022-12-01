@@ -1,0 +1,3 @@
+<?php //Test%255CTestCrudController%2523getEntityFqcn
+
+return [PHP_INT_MAX, []];
