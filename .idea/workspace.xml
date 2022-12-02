@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c621c7d-beb8-4bed-9f1a-d5d76c4902d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/scriptgeneral.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/scriptpagearticles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/scriptpanier.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/__composants/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__composants/menu.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scriptgeneral.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scriptgeneral.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scriptpagearticles.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scriptpagearticles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scriptpanier.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scriptpanier.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/panier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/panier/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/09/092d55232538341435e09d414bd88dd1.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/09/092d55232538341435e09d414bd88dd1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c5/c5827f53533420c39ef286ac3dec108c.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c5/c5827f53533420c39ef286ac3dec108c.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e5/e59e526a721c4a426a2b528b50cbb0d7.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/e5/e59e526a721c4a426a2b528b50cbb0d7.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669984921706</updated>
-      <workItem from="1669984925436" duration="14030000" />
+      <workItem from="1669984925436" duration="15519000" />
     </task>
     <servers />
   </component>

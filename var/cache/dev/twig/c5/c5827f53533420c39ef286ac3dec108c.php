@@ -84,16 +84,40 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 19
+        // line 6
+        echo "    <table>
+        <thead>
+        <tr>
+            <th>article</th>
+            <th>quantite</th>
+            <th>prix unitaire</th>
+            <th>prix total</th>
+        </tr>
+        <thead>
+        <tbody id=\"zone\">
+
+
+
+        </tbody>
+        <tfoot><tr><td id=\"bas\" colspan=\"3\"></td><td><span id=\"total\">0</span>€</td></tr></tfoot>
+        <table/>
+        <hr>
+        <form action=\"finalisation.php\" method=\"post\">
+            <input type=\"hidden\" name=\"liste\" id=\"liste\">
+            <input type=\"submit\" value=\"Valider ma commande.\">
+        </form>
+    </table>
+";
+        // line 41
         echo "
 ";
-        // line 22
+        // line 44
         echo "
 ";
-        // line 24
+        // line 46
         echo "
 ";
-        // line 48
+        // line 70
         echo "    </div>
     <a href=\"#\" class=\"command\">Continuer mes achats</a>
 ";
@@ -117,7 +141,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  97 => 48,  94 => 24,  91 => 22,  88 => 19,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  121 => 70,  118 => 46,  115 => 44,  112 => 41,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -127,6 +151,28 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 {% block title %}Panier{% endblock %}
 
 {% block body %}
+    <table>
+        <thead>
+        <tr>
+            <th>article</th>
+            <th>quantite</th>
+            <th>prix unitaire</th>
+            <th>prix total</th>
+        </tr>
+        <thead>
+        <tbody id=\"zone\">
+
+
+
+        </tbody>
+        <tfoot><tr><td id=\"bas\" colspan=\"3\"></td><td><span id=\"total\">0</span>€</td></tr></tfoot>
+        <table/>
+        <hr>
+        <form action=\"finalisation.php\" method=\"post\">
+            <input type=\"hidden\" name=\"liste\" id=\"liste\">
+            <input type=\"submit\" value=\"Valider ma commande.\">
+        </form>
+    </table>
 {#    <div id=\"arianne\">#}
 {#        <ul>#}
 {#            <li><a href=\"#\">Panier</a></li>&gt#}
