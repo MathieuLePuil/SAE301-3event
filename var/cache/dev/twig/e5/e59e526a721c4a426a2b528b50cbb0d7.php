@@ -110,6 +110,18 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
         // line 35
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/app.js"), "html", null, true);
         echo "\"></script>
+    <script src=\"";
+        // line 36
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/scriptgeneral.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 37
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/scriptpanier.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 38
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/scriptpagearticles.js"), "html", null, true);
+        echo "\"></script>
     </body>
 </html>";
         
@@ -215,7 +227,7 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
 
     public function getDebugInfo()
     {
-        return array (  189 => 27,  176 => 20,  166 => 19,  153 => 11,  143 => 10,  124 => 7,  111 => 35,  107 => 34,  101 => 30,  99 => 29,  96 => 28,  94 => 27,  91 => 26,  88 => 25,  86 => 24,  82 => 22,  80 => 19,  74 => 16,  70 => 15,  66 => 14,  63 => 13,  60 => 10,  55 => 7,  47 => 1,);
+        return array (  201 => 27,  188 => 20,  178 => 19,  165 => 11,  155 => 10,  136 => 7,  123 => 38,  119 => 37,  115 => 36,  111 => 35,  107 => 34,  101 => 30,  99 => 29,  96 => 28,  94 => 27,  91 => 26,  88 => 25,  86 => 24,  82 => 22,  80 => 19,  74 => 16,  70 => 15,  66 => 14,  63 => 13,  60 => 10,  55 => 7,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -255,6 +267,9 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
     <script src=\"https://kit.fontawesome.com/f89af89e77.js\" defer></script>
     <script src=\"{{ asset('../public/js/script.js') }}\"></script>
     <script src=\"{{ asset('../public/js/app.js') }}\"></script>
+    <script src=\"{{ asset('../public/js/scriptgeneral.js') }}\"></script>
+    <script src=\"{{ asset('../public/js/scriptpanier.js') }}\"></script>
+    <script src=\"{{ asset('../public/js/scriptpagearticles.js') }}\"></script>
     </body>
 </html>", "base.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\base.html.twig");
     }

@@ -84,56 +84,17 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "    <div id=\"arianne\">
-        <ul>
-            <li><a href=\"#\">Panier</a></li>&gt
-            <li><a href=\"#\">Connexion / Inscription</a></li>&gt
-            <li><a href=\"#\">Paiement</a></li>&gt
-            <li><a href=\"#\">Validation</a></li>
-        </ul>
-    </div>
-    <div class=\"panier-card\">
-        <div class=\"panier-img\">
-            <img src=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"Affiche\">
-        </div>
-        <div class=\"panier-event-info\">
-
-        </div>
-        <div class=\"panier_place\">
-
-        </div>
-
-        <div class=\"topCart\">
-            <img src=\"";
-        // line 26
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
-        echo "\" alt=\"\">
-            <div class=\"details\">
-                <h2>Rammstein</h2>
-                <p>Samedi 22 juillet 2023</p>
-                <p>Stade de l'Aube</p>
-                <p>21h</p>
-            </div>
-            <div class=\"qte\">
-                <div class=\"nbp\">
-                    <label for=\"nbp\">Nombre de place : </label>
-                    <input type=\"number\">
-                </div>
-                <div class=\"prix\">
-                    <label for=\"#\">Prix à l'unité : </label>
-                    <p>70 €</p>
-                </div>
-            </div>
-        </div>
-        <div class=\"prixTotal\">
-            <p>Prix total : 140 €</p>
-            <a href=\"#\" class=\"command\">Commander</a>
-        </div>
-    </div>
+        // line 19
+        echo "
+";
+        // line 22
+        echo "
+";
+        // line 24
+        echo "
+";
+        // line 48
+        echo "    </div>
     <a href=\"#\" class=\"command\">Continuer mes achats</a>
 ";
         
@@ -156,7 +117,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  113 => 26,  100 => 16,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  97 => 48,  94 => 24,  91 => 22,  88 => 19,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -166,48 +127,48 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 {% block title %}Panier{% endblock %}
 
 {% block body %}
-    <div id=\"arianne\">
-        <ul>
-            <li><a href=\"#\">Panier</a></li>&gt
-            <li><a href=\"#\">Connexion / Inscription</a></li>&gt
-            <li><a href=\"#\">Paiement</a></li>&gt
-            <li><a href=\"#\">Validation</a></li>
-        </ul>
-    </div>
-    <div class=\"panier-card\">
-        <div class=\"panier-img\">
-            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"Affiche\">
-        </div>
-        <div class=\"panier-event-info\">
+{#    <div id=\"arianne\">#}
+{#        <ul>#}
+{#            <li><a href=\"#\">Panier</a></li>&gt#}
+{#            <li><a href=\"#\">Connexion / Inscription</a></li>&gt#}
+{#            <li><a href=\"#\">Paiement</a></li>&gt#}
+{#            <li><a href=\"#\">Validation</a></li>#}
+{#        </ul>#}
+{#    </div>#}
+{#    <div class=\"panier-card\">#}
+{#        <div class=\"panier-img\">#}
+{#            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"Affiche\">#}
+{#        </div>#}
+{#        <div class=\"panier-event-info\">#}
 
-        </div>
-        <div class=\"panier_place\">
+{#        </div>#}
+{#        <div class=\"panier_place\">#}
 
-        </div>
+{#        </div>#}
 
-        <div class=\"topCart\">
-            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">
-            <div class=\"details\">
-                <h2>Rammstein</h2>
-                <p>Samedi 22 juillet 2023</p>
-                <p>Stade de l'Aube</p>
-                <p>21h</p>
-            </div>
-            <div class=\"qte\">
-                <div class=\"nbp\">
-                    <label for=\"nbp\">Nombre de place : </label>
-                    <input type=\"number\">
-                </div>
-                <div class=\"prix\">
-                    <label for=\"#\">Prix à l'unité : </label>
-                    <p>70 €</p>
-                </div>
-            </div>
-        </div>
-        <div class=\"prixTotal\">
-            <p>Prix total : 140 €</p>
-            <a href=\"#\" class=\"command\">Commander</a>
-        </div>
+{#        <div class=\"topCart\">#}
+{#            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\">#}
+{#            <div class=\"details\">#}
+{#                <h2>Rammstein</h2>#}
+{#                <p>Samedi 22 juillet 2023</p>#}
+{#                <p>Stade de l'Aube</p>#}
+{#                <p>21h</p>#}
+{#            </div>#}
+{#            <div class=\"qte\">#}
+{#                <div class=\"nbp\">#}
+{#                    <label for=\"nbp\">Nombre de place : </label>#}
+{#                    <input type=\"number\">#}
+{#                </div>#}
+{#                <div class=\"prix\">#}
+{#                    <label for=\"#\">Prix à l'unité : </label>#}
+{#                    <p>70 €</p>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class=\"prixTotal\">#}
+{#            <p>Prix total : 140 €</p>#}
+{#            <a href=\"#\" class=\"command\">Commander</a>#}
+{#        </div>#}
     </div>
     <a href=\"#\" class=\"command\">Continuer mes achats</a>
 {% endblock %}
