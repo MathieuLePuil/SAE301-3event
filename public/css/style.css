@@ -349,6 +349,10 @@ footer p{
     border-radius: 15px;
 }
 
+.highlighted{
+    color: blue;
+    background-color: red;
+}
 @media screen and (max-width: 450px) {
     .event_info h1 {
         font-size: 40px;
