@@ -119,7 +119,10 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 ";
         // line 70
         echo "    </div>
-    <a href=\"#\" class=\"command\">Continuer mes achats</a>
+    <a href=\"";
+        // line 71
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_programmation");
+        echo "\" class=\"command\">Continuer mes achats</a>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -141,7 +144,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  121 => 70,  118 => 46,  115 => 44,  112 => 41,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  124 => 71,  121 => 70,  118 => 46,  115 => 44,  112 => 41,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -216,7 +219,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 {#            <a href=\"#\" class=\"command\">Commander</a>#}
 {#        </div>#}
     </div>
-    <a href=\"#\" class=\"command\">Continuer mes achats</a>
+    <a href=\"{{ path('app_programmation') }}\" class=\"command\">Continuer mes achats</a>
 {% endblock %}
 ", "panier/index.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\panier\\index.html.twig");
     }
