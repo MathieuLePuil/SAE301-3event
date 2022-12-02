@@ -44,18 +44,19 @@ input {
     outline: none;
     padding-left: 10px;
 }
-
+#menu_end {
+    margin-right: 30px;
+}
 .menutest img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
 
 .search {
     display: flex;
     width: 255px;
     padding: 5px;
-    margin: 20px 0;
-    border: 2px solid #000000;
+    margin: 20px 0;border: 2px solid #000000;
     border-radius: 63px;
 }
 nav{
