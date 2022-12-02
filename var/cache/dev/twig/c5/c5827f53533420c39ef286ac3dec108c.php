@@ -85,7 +85,15 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <table>
+        echo "    <div id=\"arianne\">
+        <ul>
+            <li><a href=\"#\">Panier</a></li>&gt
+            <li><a href=\"#\">Connexion / Inscription</a></li>&gt
+            <li><a href=\"#\">Paiement</a></li>&gt
+            <li><a href=\"#\">Validation</a></li>
+        </ul>
+    </div>
+    <table>
         <thead>
         <tr>
             <th>article</th>
@@ -107,20 +115,21 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
             <input type=\"submit\" value=\"Valider ma commande.\">
         </form>
     </table>
+
 ";
-        // line 41
+        // line 42
         echo "
 ";
-        // line 44
+        // line 45
         echo "
 ";
-        // line 46
+        // line 47
         echo "
 ";
-        // line 70
+        // line 71
         echo "    </div>
     <a href=\"";
-        // line 71
+        // line 72
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_programmation");
         echo "\" class=\"command\">Continuer mes achats</a>
 ";
@@ -144,7 +153,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  124 => 71,  121 => 70,  118 => 46,  115 => 44,  112 => 41,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  133 => 72,  130 => 71,  127 => 47,  124 => 45,  121 => 42,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -154,6 +163,14 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 {% block title %}Panier{% endblock %}
 
 {% block body %}
+    <div id=\"arianne\">
+        <ul>
+            <li><a href=\"#\">Panier</a></li>&gt
+            <li><a href=\"#\">Connexion / Inscription</a></li>&gt
+            <li><a href=\"#\">Paiement</a></li>&gt
+            <li><a href=\"#\">Validation</a></li>
+        </ul>
+    </div>
     <table>
         <thead>
         <tr>
@@ -176,14 +193,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
             <input type=\"submit\" value=\"Valider ma commande.\">
         </form>
     </table>
-{#    <div id=\"arianne\">#}
-{#        <ul>#}
-{#            <li><a href=\"#\">Panier</a></li>&gt#}
-{#            <li><a href=\"#\">Connexion / Inscription</a></li>&gt#}
-{#            <li><a href=\"#\">Paiement</a></li>&gt#}
-{#            <li><a href=\"#\">Validation</a></li>#}
-{#        </ul>#}
-{#    </div>#}
+
 {#    <div class=\"panier-card\">#}
 {#        <div class=\"panier-img\">#}
 {#            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"Affiche\">#}
