@@ -2,7 +2,11 @@ $( document ).ready(function() {
     $('#search').keyup(function (event){
         var input = $(this);
         var val = input.val();
-        var regexp = '\\b(.*)a(.*)\\b'
+        var regexp = '\\b(.*)';
+            for(var i in val){
+                regexp += '('+val[i]+')(.*)';
+            }
+            regexp += '\\b';
         $('#filter').find('span').each(function (){
             var span = $(this);
             var resultat = span.text().match(new RegExp(regexp,'i'));
@@ -16,8 +20,10 @@ $( document ).ready(function() {
                             string += resultat[i];
                         }
                     }
-                    span.empty().append(string);
                 }
+                span.empty().append(string);
+            }else {
+                span.parent().parent().hide();
             }
         })
     })
