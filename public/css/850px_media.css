@@ -80,7 +80,10 @@ and (max-width: 850px) {
         transform: translateY(0);
     }
     #menu_end{
-        display: none;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     i{
         color: black;

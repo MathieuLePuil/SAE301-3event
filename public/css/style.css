@@ -38,15 +38,23 @@ main{
     text-decoration: none;
     color: black;
 }
-
 input {
     background-color: transparent;
-    border: 0px solid;
+    border: 0 solid;
+    outline: none;
+    padding-left: 10px;
+}
+
+.menutest img {
+    width: 25px;
+    height: 25px;
 }
 
 .search {
     display: flex;
+    width: 255px;
     padding: 5px;
+    margin: 20px 0;
     border: 2px solid #000000;
     border-radius: 63px;
 }
@@ -85,6 +93,7 @@ nav{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /*Barre de navigation*/
 
 footer{
@@ -171,7 +180,7 @@ footer p{
 
 @media screen and (max-width: 550px) {
     main {
-        margin: 0;
+        margin: 20px 0 0 0;
     }
 }
 
