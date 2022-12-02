@@ -3,5 +3,35 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-    <p>Accueil du site.</p>
+    <h2>Concerts</h2>
+    <div id="concert" class="prog_box">
+        {#        <img src="{{ asset('images/ico/fleche_gauche.svg') }}" alt="">#}
+        <div class="prog_card">
+            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
+            <div class="prog_data">
+                <p>Date : xx/xx/xxxx</p>
+                <a href="{{ path('app_event') }}?id_event=1">Réserver</a>
+            </div>
+        </div>
+        <div class="prog_card">
+            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
+            <div class="prog_data">
+                <p>Date : xx/xx/xxxx</p>
+                <a href="#">Réserver</a>
+            </div>
+        </div>
+        <div class="prog_card">
+            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
+            <div class="prog_data">
+                <p>Date : xx/xx/xxxx</p>
+                <a href="#">Réserver</a>
+            </div>
+        </div>
+        {#        <img src="{{ asset('images/ico/fleche_droite.svg') }}" alt="">#}
+    </div>
+    <div class="backhomebutton">
+        <div class="back_home">
+            <a href="{{ path('app_programmation') }}?id_event=1">VOIR PLUS</a>
+        </div>
+    </div>
 {% endblock %}

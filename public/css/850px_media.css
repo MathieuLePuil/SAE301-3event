@@ -3,9 +3,20 @@ and (max-width: 850px) {
     body{
         overflow-x: hidden;
     }
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 1em;
+    }
     #topFooter{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
     }
     footer img{
         display: none;
@@ -51,7 +62,7 @@ and (max-width: 850px) {
         top: 0;
         left: 0;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         background: white;
         flex-direction: column;
         padding: 3rem;
@@ -62,14 +73,17 @@ and (max-width: 850px) {
     }
 
     .menu li a {
-        font-size: 2rem;
+        font-size: 17px;
     }
 
     .open .menu {
         transform: translateY(0);
     }
     #menu_end{
-        display: none;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     i{
         color: black;
@@ -81,6 +95,11 @@ and (max-width: 850px) {
     nav{
         display: flex;
         justify-content: space-between;
+        height: 60px;
+    }
+
+    .fas {
+        margin-top: -18px;
     }
 
     .prog_data{
@@ -106,5 +125,39 @@ and (max-width: 850px) {
     .event_img {
         display: flex;
         justify-content: center;
+    }
+
+    .panier-card {
+        display: flex;
+        flex-direction: column;
+        margin: 3em;
+        height: 800px;
+        border-radius: 30px;
+    }
+
+    .panier-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+        margin-right: 0;
+    }
+    .panier-img img {
+        width: 80%;
+        height: 80%;
+    }
+    .panier-event-info {
+        margin-top: -5%;
+        text-align: center;
+    }
+    .panier_place {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .panier-event-info h2 {
+        font-size: 35px;
     }
 }
