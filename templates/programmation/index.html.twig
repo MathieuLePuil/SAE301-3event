@@ -3,7 +3,8 @@
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-<div class="prog_box">
+    <input type="text" id="search">
+<div class="prog_box" id="filter">
     {% for i in prog %}
     <div class="prog_card">
         <a href="{{ path('app_event') }}?id_event={{ i.id }}"><img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt=""></a>

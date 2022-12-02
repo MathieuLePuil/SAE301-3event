@@ -85,32 +85,33 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<div class=\"prog_box\">
+        echo "    <input type=\"text\" id=\"search\">
+<div class=\"prog_box\" id=\"filter\">
     ";
-        // line 7
+        // line 8
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 7, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 8, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 8
+            // line 9
             echo "    <div class=\"prog_card\">
         <a href=\"";
-            // line 9
+            // line 10
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_event");
             echo "?id_event=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 9), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 10), "html", null, true);
             echo "\"><img src=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("images/affiche/" . twig_get_attribute($this->env, $this->source, $context["i"], "manifAffiche", [], "any", false, false, false, 9))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("images/affiche/" . twig_get_attribute($this->env, $this->source, $context["i"], "manifAffiche", [], "any", false, false, false, 10))), "html", null, true);
             echo "\" alt=\"\"></a>
         <div class=\"prog_data\">
             <p>Date : ";
-            // line 11
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 11), "html", null, true);
+            // line 12
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 12), "html", null, true);
             echo "</p>
             <a href=\"";
-            // line 12
+            // line 13
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_event");
             echo "?id_event=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 12), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 13), "html", null, true);
             echo "\">Réserver</a>
         </div>
     </div>
@@ -119,7 +120,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 16
+        // line 17
         echo "</div>
 ";
         
@@ -142,7 +143,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 
     public function getDebugInfo()
     {
-        return array (  123 => 16,  111 => 12,  107 => 11,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  124 => 17,  112 => 13,  108 => 12,  99 => 10,  96 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -152,7 +153,8 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-<div class=\"prog_box\">
+    <input type=\"text\" id=\"search\">
+<div class=\"prog_box\" id=\"filter\">
     {% for i in prog %}
     <div class=\"prog_card\">
         <a href=\"{{ path('app_event') }}?id_event={{ i.id }}\"><img src=\"{{ asset('images/affiche/' ~ i.manifAffiche ) }}\" alt=\"\"></a>
