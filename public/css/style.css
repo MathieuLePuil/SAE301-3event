@@ -1,3 +1,5 @@
+/* Initialisation */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     padding: 0;
@@ -10,7 +12,9 @@ body{
 main{
     margin: 2em;
 }
-/*Initialisation*/
+
+
+/*Barre de navigation*/
 
 .toggle{
     display: none;
@@ -51,7 +55,6 @@ input {
     width: 40px;
     height: 40px;
 }
-
 .search {
     display: flex;
     width: 255px;
@@ -70,13 +73,11 @@ nav{
     font-size: 16px;
     line-height: 20px;
 }
-
 .nav_link {
     display: inline-block;
     position: relative;
     color: #0087ca;
 }
-
 .nav_link::after {
     content: '';
     position: absolute;
@@ -89,13 +90,13 @@ nav{
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-
 .nav_link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-/*Barre de navigation*/
+
+/*Footer*/
 
 footer{
     width: 100vw;
@@ -105,7 +106,6 @@ footer{
     padding-top: 3em;
     margin-bottom: -50%;
 }
-
 hr {
     border-top: 1px solid white ;
 }
@@ -167,7 +167,9 @@ footer p{
     text-transform: uppercase;
     list-style: none;
 }
-/*Footer*/
+
+
+/*Panier*/
 
 .panier-card{
     display: flex;
@@ -178,31 +180,26 @@ footer p{
     border-radius: 60px;
     box-shadow: #0f172a 0 20px 30px -10px;
 }
-
 @media screen and (max-width: 550px) {
     main {
         margin: 20px 0 0 0;
     }
 }
-
 .panier-img {
     display: flex;
     margin-top: 1.5em;
     margin-right: -10%;
 }
-
 .panier-img img {
     width: 90%;
     height: 90%;
 }
-
 .panier-event-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1.5em;
 }
-
 .panier-event-info h2 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -210,27 +207,22 @@ footer p{
     font-size: 40px;
     text-align: center;
 }
-
 .panier-event-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: -5%;
 }
-
 .panier-event-info p {
     margin-top: -10px;
     font-size: 25px;
 }
-
 .panier-event-info h2 {
     margin-bottom: 50px;
 }
-
 .panier-event-info p {
     margin-top: -10px;
 }
-
 .panier_place {
     margin-top: 1.5em;
     text-align: right;
@@ -241,7 +233,6 @@ footer p{
     justify-content: space-between;
     padding-bottom: 40px;
 }
-
 .prixTotal {
     display: flex;
     flex-direction: column;
@@ -252,7 +243,6 @@ footer p{
     font-weight: 600;
     font-size: 20px;
 }
-
 .bouton_commander {
     display: flex;
     width: 160px;
@@ -262,7 +252,6 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-
 .bouton_commander:hover {
     display: flex;
     width: 170px;
@@ -272,7 +261,6 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-
 .bouton_commander a {
     text-decoration: none;
     color: white;
@@ -280,7 +268,6 @@ footer p{
     font-size: 17px;
     font-weight: 900;
 }
-
 #arianne ul{
     display: flex;
     list-style: none;
@@ -288,8 +275,7 @@ footer p{
 }
 
 
-
-/*Panier*/
+/*Programmation*/
 
 .prog_box{
     display: flex;
@@ -319,7 +305,8 @@ footer p{
     transition-duration: 2s;
 }
 
-/* PAGE EVENT */
+
+/*Event*/
 
 .event_page {
     display: flex;
@@ -327,7 +314,6 @@ footer p{
     flex-direction: column;
     width: 100%;
 }
-
 .event_nom_lieu_prix {
     display: flex;
     height: 367px;
@@ -335,7 +321,6 @@ footer p{
     justify-content: space-between;
     margin: -1%;
 }
-
 .event_info {
     display: flex;
     height: 100%;
@@ -345,16 +330,13 @@ footer p{
     margin: 0 5em 2em 5em;
     flex-wrap: wrap;
 }
-
 .event_info h1, .event_info h2 {
     text-align: right;
 }
-
 .event_info img {
     width: 150%;
     height: 150%;
 }
-
 @media screen and (max-width: 1250px) {
     .event_info img {
         width: 120%;
@@ -367,18 +349,15 @@ footer p{
         height: 294px;
     }
 }
-
 .event_info h1 {
     font-size: 70px;
     font-weight: 900;
     font-family: 'Montserrat';
 }
-
 .event_info h2 {
     font-size: 30px;
     font-family: 'Montserrat';
 }
-
 @media screen and (max-width: 1000px) {
     .event_info h1 {
         font-size: 50px;
@@ -397,12 +376,10 @@ footer p{
         height: 270px;
     }
 }
-
 .event_reserver {
     display: flex;
     justify-content: flex-end;
 }
-
 .event_reserver h3 {
     font-size: 30px;
     font-weight: 700;
@@ -413,7 +390,6 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-
 .bouton_reserver {
     display: flex;
     width: 150px;
@@ -422,7 +398,6 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-
 .bouton_reserver:hover {
     display: flex;
     width: 160px;
@@ -432,7 +407,6 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-
 .bouton_reserver a {
     text-decoration: none;
     color: white;
@@ -440,18 +414,15 @@ footer p{
     font-size: 17px;
     font-weight: 900;
 }
-
 .event_description {
     display: flex;
     justify-content: center;
     margin: 0 5em 2em 5em;
 }
-
 .backhomebutton {
     display: flex;
     justify-content: center;
 }
-
 .back_home {
     display: flex;
     justify-content: center;
@@ -462,20 +433,16 @@ footer p{
     border-radius: 20px;
     align-items: center;
 }
-
 .back_home:hover {
     width: 230px;
     height: 70px;
 }
-
 .back_home a {
     text-decoration: none;
     color: white;
-    font-family: 'Montserrat';
     font-size: 17px;
     font-weight: 900;
 }
-
 @media screen and (max-width: 450px) {
     .event_info h1 {
         font-size: 40px;
@@ -506,21 +473,19 @@ footer p{
     }
 }
 
-/*custom font*/
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+/*Fil d'ariane*/
 
 .ariane {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 .breadcrumb {
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
 }
-
 .breadcrumb {
     /*centering*/
     display: inline-block;
@@ -529,7 +494,6 @@ footer p{
     /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
     counter-reset: flag;
 }
-
 .breadcrumb a {
     text-decoration: none;
     outline: none;
@@ -544,7 +508,6 @@ footer p{
     background: linear-gradient(#666, #333);
     position: relative;
 }
-/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
 .breadcrumb a:first-child {
     padding-left: 46px;
     border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
@@ -556,8 +519,6 @@ footer p{
     border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
     padding-right: 20px;
 }
-
-/*hover/active styles*/
 .breadcrumb a.active, .breadcrumb a:hover{
     background: #333;
     background: linear-gradient(#333, #000);
@@ -566,8 +527,6 @@ footer p{
     background: #333;
     background: linear-gradient(135deg, #333, #000);
 }
-
-/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
 .breadcrumb a:after {
     content: '';
     position: absolute;
@@ -594,11 +553,9 @@ footer p{
       50px - to prevent hover glitches on the border created using shadows*/
     border-radius: 0 5px 0 50px;
 }
-/*we dont need an arrow after the last link*/
 .breadcrumb a:last-child:after {
     content: none;
 }
-/*we will use the :before element to show numbers*/
 .breadcrumb a:before {
     content: counter(flag);
     counter-increment: flag;
@@ -615,8 +572,6 @@ footer p{
     background: linear-gradient(#444, #222);
     font-weight: bold;
 }
-
-
 .flat a, .flat a:after {
     background: white;
     color: black;
@@ -629,4 +584,129 @@ footer p{
 .flat a:hover, .flat a.active,
 .flat a:hover:after, .flat a.active:after{
     background: #2298BC;
+}
+
+
+/*Carrousel*/
+
+.slide-container{
+    max-width: 90%;
+    width: 90%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2298BC;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #2298BC;
+    border: none;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+    border: none;
+}
+.card-image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #2298BC;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #2298BC;
+}
+
+.swiper-navBtn{
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #2298BC;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 35px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #2298BC;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #2298BC;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
 }

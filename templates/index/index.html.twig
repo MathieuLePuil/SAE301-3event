@@ -3,35 +3,119 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-    <h2>Concerts</h2>
-    <div id="concert" class="prog_box">
-        {#        <img src="{{ asset('images/ico/fleche_gauche.svg') }}" alt="">#}
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="{{ path('app_event') }}?id_event=1">Réserver</a>
+    <div class="next-event">
+        <h2>PROCHAINS ÉVÉNEMENTS</h2>
+        <div class="slide-container swiper">
+            <div class="slide-content slide4">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Rammstein</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Réserver</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="swiper-button-next swiper-button-next4 swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-button-prev4 swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        {#        <img src="{{ asset('images/ico/fleche_droite.svg') }}" alt="">#}
     </div>
     <div class="backhomebutton">
-        <div class="back_home">
-            <a href="{{ path('app_programmation') }}?id_event=1">VOIR PLUS</a>
-        </div>
+            <div class="back_home">
+                <a href="{{ path('app_programmation') }}?id_event=1">VOIR PLUS</a>
+            </div>
     </div>
+    <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/swiper.js') }}"></script>
 {% endblock %}
