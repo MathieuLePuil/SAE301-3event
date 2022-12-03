@@ -1,20 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello InfosPratiquesController!{% endblock %}
+{% block title %}Infos Pratiques{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="infospratique">
+        <div class="objet-interdit">
+            <h2>Objets Interdits</h2>
+            <h3>IL EST INTERDIT D’INTRODUIRE LES LIEUX avec LES OBJETS OU ARTICLES SUIVANTS :</h3>
+            <p>• Les valises, peu importe leur taille ou leur volume ainsi que les gros sacs (tous types de sacs supérieurs à un format A4 - sac à dos, sac de randonnée, sac de sport...). Leur placement en consigne vous sera systématiquement refusé. Nous vous remercions donc de prendre vos dispositions avant d'arriver au lieu. <br>
+            • Les banderoles, insignes, badges, tracts ou tout autre support dont l’objet est d’être vus par des tiers à des fins politiques, idéologiques, philosophiques ou commerciales ou présentant notamment un caractère raciste ou xénophobe, <br>
+            • Les animaux, sauf cas exceptionnel (non voyants), <br>
+            • Tout objet susceptible de servir de projectile, de constituer une arme ou de mettre en péril la sécurité du public, en particulier : les armes (couteaux, objets tranchants, revolvers...), les outils, les objets en verre (bouteilles, verres...), les casques, les cornes de brume, les hampes rigides et de gros diamètre, les barres, les brumisateurs, les bouteilles même inférieures à 33 cl, les poches d'eau, les gourdes, <br>
+            • Les engins et articles pyrotechniques : les cierges magiques, les torches et bougies, les feux de Bengale, les pétards, les bombes fumigènes, les fusées, etc... <br>
+            • Les parapluies grand modèle muni d’une partie métallique pointue, les chaussures de sécurité ou présentant une armature métallique extérieure, <br>
+            • Toute boisson alcoolisée.
+            <h4>ATTENTION : cette liste est non exhaustive et peut être amenée à évoluer suivant les demandes des organisateurs</h4>
+            <h5>Tout détenteur d’un billet est informé qu’il est susceptible d’être filmé dans le lieu ou lors de l’accès à celui-ci dans le cadre des mesures de vidéosurveillance.
+                <br><br>Une consigne gratuite est à votre disposition à droite de chaque porte du lieu.</h5>
+        </div>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/MAMP/SAE301-3event/src/Controller/InfosPratiquesController.php'|file_link(0) }}">src/Controller/InfosPratiquesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/MAMP/SAE301-3event/templates/infos_pratiques/index.html.twig'|file_link(0) }}">templates/infos_pratiques/index.html.twig</a></code></li>
-    </ul>
-</div>
 {% endblock %}
