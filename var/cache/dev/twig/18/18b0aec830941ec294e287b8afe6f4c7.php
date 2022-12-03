@@ -85,25 +85,31 @@ class __TwigTemplate_5bc79e1939b06881031efed28db58964 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <div class=\"salle\">
-        <img src=\"#\" alt=\"\">
-        <h2>Stade de l'Aube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href=\"#\">En voir plus</a>
-    </div>
-    <div class=\"salle\">
-        <img src=\"#\" alt=\"\">
-        <h2>Le cube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href=\"#\">En voir plus</a>
-    </div>
-    <div class=\"salle\">
-        <img src=\"#\" alt=\"\">
-        <h2>Théâtre de Champagne</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href=\"#\">En voir plus</a>
-    </div>
-";
+        echo "    ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["salles"]) || array_key_exists("salles", $context) ? $context["salles"] : (function () { throw new RuntimeError('Variable "salles" does not exist.', 6, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
+            // line 7
+            echo "        <div class=\"salle\">
+            <img src=\"#\" alt=\"";
+            // line 8
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "salleNom", [], "any", false, false, false, 8), "html", null, true);
+            echo "\">
+            <h2>";
+            // line 9
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "salleNom", [], "any", false, false, false, 9), "html", null, true);
+            echo "</h2>
+            <p>";
+            // line 10
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "salleAdresse", [], "any", false, false, false, 10), "html", null, true);
+            echo "</p>
+            <a href=\"#\">En voir plus</a>
+        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -124,7 +130,7 @@ class __TwigTemplate_5bc79e1939b06881031efed28db58964 extends Template
 
     public function getDebugInfo()
     {
-        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  104 => 10,  100 => 9,  96 => 8,  93 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -134,24 +140,14 @@ class __TwigTemplate_5bc79e1939b06881031efed28db58964 extends Template
 {% block title %}Nos salles{% endblock %}
 
 {% block body %}
-    <div class=\"salle\">
-        <img src=\"#\" alt=\"\">
-        <h2>Stade de l'Aube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href=\"#\">En voir plus</a>
-    </div>
-    <div class=\"salle\">
-        <img src=\"#\" alt=\"\">
-        <h2>Le cube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href=\"#\">En voir plus</a>
-    </div>
-    <div class=\"salle\">
-        <img src=\"#\" alt=\"\">
-        <h2>Théâtre de Champagne</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href=\"#\">En voir plus</a>
-    </div>
+    {% for i in salles %}
+        <div class=\"salle\">
+            <img src=\"#\" alt=\"{{ i.salleNom }}\">
+            <h2>{{ i.salleNom }}</h2>
+            <p>{{ i.salleAdresse }}</p>
+            <a href=\"#\">En voir plus</a>
+        </div>
+    {% endfor %}
 {% endblock %}
 ", "salles/index.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\salles\\index.html.twig");
     }

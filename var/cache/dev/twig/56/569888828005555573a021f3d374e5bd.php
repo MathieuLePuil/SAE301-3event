@@ -43,7 +43,7 @@ class __TwigTemplate_041ea944a8b0d927334f165a58775414 extends Template
         echo "<div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
     <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
-            <img class=\"d-block w-100\" src=\"";
+        <img class=\"d-block w-100\" src=\"";
         // line 4
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/carrousel/BANNIERE ELECTRIC CALLBOY.png"), "html", null, true);
         echo "\" alt=\"First slide\">
@@ -98,7 +98,7 @@ class __TwigTemplate_041ea944a8b0d927334f165a58775414 extends Template
         return new Source("<div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
     <div class=\"carousel-inner\">
         <div class=\"carousel-item active\">
-            <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/BANNIERE ELECTRIC CALLBOY.png') }}\" alt=\"First slide\">
+        <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/BANNIERE ELECTRIC CALLBOY.png') }}\" alt=\"First slide\">
         </div>
         <div class=\"carousel-item\">
             <img class=\"d-block w-100\" src=\"{{ asset('images/carrousel/BANNIERE IMAGINE DRAGONS.png') }}\" alt=\"Second slide\">

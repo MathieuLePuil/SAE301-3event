@@ -38,3 +38,15 @@ c6a93a,::1,GET,http://localhost/public/index.php/,1670080402,,200
 228ca8,::1,GET,http://localhost/public/index.php/,1670080404,,200
 77d7ea,::1,GET,http://localhost/public/,1670080454,,200
 291ec8,::1,GET,http://localhost/public/index.php/,1670080460,,200
+3b8128,::1,GET,http://localhost/public/index.php/,1670083385,,200
+523d8d,::1,GET,http://localhost/public/index.php/,1670083389,,200
+8fdc55,::1,GET,http://localhost/public/index.php/programmation,1670083391,,200
+2ba164,::1,GET,http://localhost/public/index.php/salles,1670083402,,200
+570fb1,::1,GET,http://localhost/public/index.php/salles,1670083402,,200
+b3c42f,::1,GET,http://localhost/public/index.php/contact,1670083405,,200
+4a4af9,::1,GET,http://localhost/public/index.php/panier,1670083408,,200
+eb744c,::1,GET,http://localhost/public/index.php/programmation,1670083417,,200
+c54042,::1,GET,http://localhost/public/index.php/event?id_event=1,1670083419,,200
+13271f,::1,GET,http://localhost/public/index.php/panier,1670083423,,200
+33dcb5,::1,GET,http://localhost/public/index.php/programmation,1670083428,,200
+6ccc47,::1,GET,http://localhost/public/index.php/event?id_event=2,1670083431,,200
