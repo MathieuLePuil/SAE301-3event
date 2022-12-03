@@ -284,11 +284,14 @@ footer p{
     align-items: center;
 }
 .prog_box div img{
-    margin: .7em;
+    margin: 1em;
+    width: 25%;
+    height: auto;
 }
 .prog_card{
     text-align: center;
 }
+
 .prog_data{
     opacity: 0;
     transform: translate(0,-20%);
@@ -439,6 +442,16 @@ footer p{
     color: white;
     font-size: 17px;
     font-weight: 900;
+}
+.event_img{
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.highlighted{
+    color: blue;
+    background-color: red;
 }
 @media screen and (max-width: 450px) {
     .event_info h1 {
