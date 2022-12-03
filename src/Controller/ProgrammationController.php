@@ -15,7 +15,15 @@ class ProgrammationController extends AbstractController
     {
         return $this->render('programmation/index.html.twig', [
             'controller_name' => 'ProgrammationController',
-            'prog' => $manifestationsRepository->findAll(),
+            'concert' => $manifestationsRepository->findBy(
+                ['manif_genre' => 'Concert'],
+            ),
+            'spectacle' => $manifestationsRepository->findBy(
+                ['manif_genre' => 'Spectacle'],
+            ),
+            'football' => $manifestationsRepository->findBy(
+                ['manif_genre' => 'Football'],
+            ),
         ]);
     }
 }

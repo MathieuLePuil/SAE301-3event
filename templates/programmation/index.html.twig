@@ -3,24 +3,75 @@
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-    {{ dump() }}
-{#    <div class="prog_box">#}
-{#    {% for i in prog %}#}
-{#            <div class="prog_card">#}
-{#                <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="">#}
-{#                <div class="prog_data">#}
-{#                    <p>Date : {{ i.manifDate }}</p>#}
-{#                    <a href="#">Réserver</a>#}
-{#                </div>#}
-{#            </div>#}
-{#        {% endfor %}#}
-{#    </div>#}
+    <input type="text" id="search">
     <div class="concerts">
         <h2>Concerts</h2>
         <div class="slide-container swiper">
             <div class="slide-content slide1">
                 <div class="card-wrapper swiper-wrapper">
-                    {% for i in prog %}
+                    {% for i in concert %}
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">{{ i.manifTitre }}</h2>
+                                <p class="description">{{ i.manifDescription }}</p>
+
+                                <button class="button">Réserver</button>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-button-next1 swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-button-prev1 swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="spectacle">
+        <h2>Concerts</h2>
+        <div class="slide-container swiper">
+            <div class="slide-content slide1">
+                <div class="card-wrapper swiper-wrapper">
+                    {% for i in spectacle %}
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">{{ i.manifTitre }}</h2>
+                                <p class="description">{{ i.manifDescription }}</p>
+
+                                <button class="button">Réserver</button>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-button-next1 swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-button-prev1 swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="football">
+        <h2>Concerts</h2>
+        <div class="slide-container swiper">
+            <div class="slide-content slide1">
+                <div class="card-wrapper swiper-wrapper">
+                    {% for i in football %}
                         <div class="card swiper-slide">
                             <div class="image-content">
                                 <span class="overlay"></span>
@@ -49,20 +100,4 @@
 
     <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('js/swiper.js') }}"></script>
-
-    <input type="text" id="search">
-{#    <div id="result"></div>#}
-{#        <div class="prog_box" id="filter">#}
-{#            {% for i in prog %}#}
-{#                <div class="prog_card">#}
-{#                    <p><span class="">{{ i.manifTitre }}</span></p>#}
-{#                    <a href="{{ path('app_event') }}?id_event={{ i.id }}"><img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt=""></a>#}
-{#                    <div class="prog_data">#}
-{#                        <p>Date : {{ i.manifDate }}</p>#}
-{#                        <a href="{{ path('app_event') }}?id_event={{ i.id }}">Réserver</a>#}
-{#                    </div>#}
-{#                </div>#}
-{#            {% endfor %}#}
-{#        </div>#}
-{#</div>#}
 {% endblock %}

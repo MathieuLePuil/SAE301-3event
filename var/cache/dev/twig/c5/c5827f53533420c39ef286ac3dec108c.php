@@ -85,15 +85,20 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <div id=\"arianne\">
-        <ul>
-            <li><a href=\"#\">Panier</a></li>&gt
-            <li><a href=\"#\">Connexion / Inscription</a></li>&gt
-            <li><a href=\"#\">Paiement</a></li>&gt
-            <li><a href=\"#\">Validation</a></li>
-        </ul>
+        echo "    <div class=\"ariane\">
+        <div class=\"breadcrumb flat\">
+            <a href=\"";
+        // line 8
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_panier");
+        echo "\" class=\"active\">Panier</a>
+            <a href=\"#\">Connexion / Inscription</a>
+            <a href=\"#\">Paiement</a>
+            <a href=\"#\">Validation</a>
+        </div>
     </div>
-    <table>
+";
+        // line 55
+        echo "    <table>
         <thead>
         <tr>
             <th>article</th>
@@ -117,16 +122,16 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
     </table>
 
 ";
-        // line 44
+        // line 85
         echo "
 ";
-        // line 46
+        // line 87
         echo "
 ";
-        // line 70
+        // line 111
         echo "    </div>
     <a href=\"";
-        // line 71
+        // line 112
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_programmation");
         echo "\" class=\"command\">Continuer mes achats</a>
 ";
@@ -150,7 +155,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  130 => 71,  127 => 70,  124 => 46,  121 => 44,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  135 => 112,  132 => 111,  129 => 87,  126 => 85,  101 => 55,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -160,14 +165,55 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 {% block title %}Panier{% endblock %}
 
 {% block body %}
-    <div id=\"arianne\">
-        <ul>
-            <li><a href=\"#\">Panier</a></li>&gt
-            <li><a href=\"#\">Connexion / Inscription</a></li>&gt
-            <li><a href=\"#\">Paiement</a></li>&gt
-            <li><a href=\"#\">Validation</a></li>
-        </ul>
+    <div class=\"ariane\">
+        <div class=\"breadcrumb flat\">
+            <a href=\"{{ path('app_panier') }}\" class=\"active\">Panier</a>
+            <a href=\"#\">Connexion / Inscription</a>
+            <a href=\"#\">Paiement</a>
+            <a href=\"#\">Validation</a>
+        </div>
     </div>
+{#    <div class=\"panier-card\">#}
+{#        <div class=\"panier-img\">#}
+{#            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"Affiche\">#}
+{#        </div>#}
+{#        <div class=\"panier-event-info\">#}
+{#            <h2>Rammstein</h2>#}
+{#            <p>Samedi 22 juillet 2023</p>#}
+{#            <p>Stade de l'Aube</p>#}
+{#            <p>20h</p>#}
+{#        </div>#}
+{#        <div class=\"panier_place\">#}
+{#            <div class=\"panier_quantite\">#}
+{#                <div class=\"nbp\">#}
+{#                    <label for=\"nbp\">Nombre de place : </label>#}
+{#                    <select name=\"place\" id=\"nbplace-select\">#}
+{#                        <option value=\"1\">1</option>#}
+{#                        <option value=\"2\">2</option>#}
+{#                        <option value=\"3\">3</option>#}
+{#                        <option value=\"4\">4</option>#}
+{#                        <option value=\"5\">5</option>#}
+{#                        <option value=\"5\">6</option>#}
+{#                    </select>#}
+{#                </div>#}
+{#                <div class=\"prix\">#}
+{#                    <label for=\"#\">Prix à l'unité : 70 €</label>#}
+{#                </div>#}
+{#                <a href=\"#\"><img src=\"{{ asset('images/ico/poubelle.png') }}\" alt=\"Affiche\" width=\"20px\"></a>#}
+{#            </div>#}
+{#            <div class=\"prixTotal\">#}
+{#                <p>Prix total : 140 €</p>#}
+{#                <div class=\"bouton_commander\">#}
+{#                    <a href=\"{{ path('app_login') }}\">COMMANDER</a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class=\"backhomebutton\">#}
+{#        <div class=\"back_home\">#}
+{#            <a href=\"{{ path('app_index') }}?id_event=1\">RETOUR À L'ACCUEIL</a>#}
+{#        </div>#}
+{#    </div>#}
     <table>
         <thead>
         <tr>
