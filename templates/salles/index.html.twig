@@ -3,22 +3,50 @@
 {% block title %}Nos salles{% endblock %}
 
 {% block body %}
-    <div class="salle">
-        <img src="#" alt="">
-        <h2>Stade de l'Aube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href="#">En voir plus</a>
+    <div class="salle-box">
+        <div class="salle-presentation">
+            <div class="img-salle">
+                <img src="{{ asset('images/salles/stadedelaube.png') }}" alt="Stade de l'Aube">
+            </div>
+            <div class="info-salle">
+                <h2>Stade de l'Aube</h2>
+                <p>42 Avenue Robert Schumann</p>
+                <p>10000, Troyes</p>
+            </div>
+            <div class="map-salle">
+                <img src="{{ asset('images/salles/planstadedelaube.png') }}" alt="Plan Stade de l'Aube">
+            </div>
+        </div>
     </div>
-    <div class="salle">
-        <img src="#" alt="">
-        <h2>Le cube</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href="#">En voir plus</a>
+    <div class="salle-box">
+        <div class="salle-presentation">
+            <div class="img-salle">
+                <img src="{{ asset('images/salles/lecube.png') }}" alt="Le Cube">
+            </div>
+            <div class="info-salle">
+                <h2>Le Cube</h2>
+                <p>20 Rue des Gayettes</p>
+                <p>10000, Troyes</p>
+            </div>
+            <div class="map-salle">
+                <img src="{{ asset('images/salles/planlecube.png') }}" alt="Plan Le Cube">
+            </div>
+        </div>
     </div>
-    <div class="salle">
-        <img src="#" alt="">
-        <h2>Théâtre de Champagne</h2>
-        <p>Lorem ipsum dolore sit amet</p>
-        <a href="#">En voir plus</a>
+    <div class="salle-box">
+        <div class="salle-presentation">
+            <div class="img-salle">
+                <img src="{{ asset('images/salles/theatre.png') }}" alt="Le Cube">
+            </div>
+            <div class="info-salle">
+                <h2>Théâtre de Champagne</h2>
+                <p>Boulevard Gambetta</p>
+                <p>10000, Troyes</p>
+            </div>
+            <div class="map-salle">
+                <img src="{{ asset('images/salles/plantheatre.png') }}" alt="Plan Le Cube">
+            </div>
+        </div>
     </div>
+    
 {% endblock %}

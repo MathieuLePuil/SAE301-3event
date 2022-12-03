@@ -753,3 +753,41 @@ footer p{
 .next-event h2 {
     margin-bottom: 20px;
 }
+
+
+/*Page Salles*/
+
+.salle-box{
+    display: flex;
+    justify-content: center;
+    margin: 2em 5em 3em 5em;
+    background-color: #D9D9D9;
+    height: 310px;
+    border-radius: 60px;
+    box-shadow: #0f172a 0 20px 30px -10px;
+}
+.salle-presentation img{
+    border-radius: 20px;
+}
+@media screen and (max-width: 1350px) {
+    .salle-presentation img {
+        width: 80%;
+    }
+}
+.salle-presentation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.salle-presentation p, .salle-presentation h2 {
+    text-align: center;
+}
+.img-salle {
+    display: flex;
+    justify-content: center;
+}
+.map-salle {
+    display: flex;
+    justify-content: center;
+}
