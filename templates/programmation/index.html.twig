@@ -7,15 +7,15 @@
     <div id="result"></div>
         <div class="prog_box" id="filter">
             {% for i in prog %}
-            <div class="prog_card">
-                <p><span class="">{{ i.manifTitre }}</span></p>
-                <a href="{{ path('app_event') }}?id_event={{ i.id }}"><img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt=""></a>
-                <div class="prog_data">
-                    <p>Date : {{ i.manifDate }}</p>
-                    <a href="{{ path('app_event') }}?id_event={{ i.id }}">Réserver</a>
+                <div class="prog_card">
+                    <p><span class="">{{ i.manifTitre }}</span></p>
+                    <a href="{{ path('app_event') }}?id_event={{ i.id }}"><img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt=""></a>
+                    <div class="prog_data">
+                        <p>Date : {{ i.manifDate }}</p>
+                        <a href="{{ path('app_event') }}?id_event={{ i.id }}">Réserver</a>
+                    </div>
                 </div>
-            </div>
-    </div>
-    {% endfor %}
+            {% endfor %}
+        </div>
 </div>
 {% endblock %}
