@@ -3,6 +3,7 @@
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
+    {{ dump() }}
 {#    <div class="prog_box">#}
 {#    {% for i in prog %}#}
 {#            <div class="prog_card">#}
@@ -31,7 +32,7 @@
 
                             <div class="card-content">
                                 <h2 class="name">{{ i.manifTitre }}</h2>
-                                <p class="description">{{ event[id].manifDescription }}</p>
+                                <p class="description">{{ i.manifDescription }}</p>
 
                                 <button class="button">Réserver</button>
                             </div>

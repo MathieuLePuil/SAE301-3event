@@ -70,16 +70,15 @@ class __TwigTemplate_fbc0e8cca750fc0bdc81c33239a87a7d extends Template
     </div>
     <div id=\"menu_end\">
         <ul class=\"menutest\">
-            <li><input type=\"text\"></li>
             <li><a href=\"";
-        // line 18
+        // line 17
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_panier");
         echo "\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/panier.svg"), "html", null, true);
         echo "\" alt=\"Panier\"></a></li>
             <span id='panier'></span>
             <li><a href=\"#\"><img src=\"";
-        // line 20
+        // line 19
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/profil.svg"), "html", null, true);
         echo "\" alt=\"Profil\"></a></li>
         </ul>
@@ -105,7 +104,7 @@ class __TwigTemplate_fbc0e8cca750fc0bdc81c33239a87a7d extends Template
 
     public function getDebugInfo()
     {
-        return array (  83 => 20,  76 => 18,  67 => 12,  62 => 10,  58 => 9,  52 => 8,  43 => 1,);
+        return array (  82 => 19,  75 => 17,  67 => 12,  62 => 10,  58 => 9,  52 => 8,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -126,7 +125,6 @@ class __TwigTemplate_fbc0e8cca750fc0bdc81c33239a87a7d extends Template
     </div>
     <div id=\"menu_end\">
         <ul class=\"menutest\">
-            <li><input type=\"text\"></li>
             <li><a href=\"{{ path('app_panier') }}\"><img src=\"{{ asset('images/ico/panier.svg') }}\" alt=\"Panier\"></a></li>
             <span id='panier'></span>
             <li><a href=\"#\"><img src=\"{{ asset('images/ico/profil.svg') }}\" alt=\"Profil\"></a></li>

@@ -67,59 +67,74 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
         echo "\">
         <link rel=\"stylesheet\" href=\"";
         // line 15
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/css/850px_media.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/css/1150px_media.css"), "html", null, true);
         echo "\">
         <link rel=\"stylesheet\" href=\"";
         // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/css/1150px_media.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/css/850px_media.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/css/swiper-bundle.min.css"), "html", null, true);
         echo "\">
         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css\"/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'> </script>
+        <script src=\"https://kit.fontawesome.com/f89af89e77.js\" crossorigin=\"anonymous\"></script>
+
 
         ";
-        // line 19
+        // line 23
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 22
+        // line 26
         echo "    </head>
     <body>
     ";
-        // line 24
-        $this->loadTemplate("__composants/menu.html.twig", "base.html.twig", 24)->display($context);
-        // line 25
-        echo "    ";
-        $this->loadTemplate("__composants/carrousel.html.twig", "base.html.twig", 25)->display($context);
-        // line 26
-        echo "    <main>
-        ";
-        // line 27
-        $this->displayBlock('body', $context, $blocks);
         // line 28
+        $this->loadTemplate("__composants/menu.html.twig", "base.html.twig", 28)->display($context);
+        // line 29
+        echo "    ";
+        $this->loadTemplate("__composants/carrousel.html.twig", "base.html.twig", 29)->display($context);
+        // line 30
+        echo "    <main>
+        <div class=\"search\">
+            <a href=\"";
+        // line 32
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/ico/loupe.png"), "html", null, true);
+        echo "\" alt=\"\" width=\"25px\"></a><input type=\"text\" placeholder=\"Rechercher...\">
+        </div>
+        ";
+        // line 34
+        $this->displayBlock('body', $context, $blocks);
+        // line 35
         echo "    </main>
     ";
-        // line 29
-        $this->loadTemplate("__composants/footer.html.twig", "base.html.twig", 29)->display($context);
-        // line 30
+        // line 36
+        $this->loadTemplate("__composants/footer.html.twig", "base.html.twig", 36)->display($context);
+        // line 37
         echo "    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
     <script src=\"https://kit.fontawesome.com/f89af89e77.js\" defer></script>
     <script src=\"";
-        // line 34
+        // line 41
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/script.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 35
+        // line 42
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/app.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 36
+        // line 43
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/scriptgeneral.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 37
+        // line 44
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/scriptpanier.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 38
+        // line 45
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../public/js/scriptpagearticles.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -174,7 +189,7 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
 
     }
 
-    // line 19
+    // line 23
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -184,7 +199,7 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 20
+        // line 24
         echo "            ";
         echo twig_escape_filter($this->env, $this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
         echo "
@@ -197,7 +212,7 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
 
     }
 
-    // line 27
+    // line 34
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -227,7 +242,7 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
 
     public function getDebugInfo()
     {
-        return array (  201 => 27,  188 => 20,  178 => 19,  165 => 11,  155 => 10,  136 => 7,  123 => 38,  119 => 37,  115 => 36,  111 => 35,  107 => 34,  101 => 30,  99 => 29,  96 => 28,  94 => 27,  91 => 26,  88 => 25,  86 => 24,  82 => 22,  80 => 19,  74 => 16,  70 => 15,  66 => 14,  63 => 13,  60 => 10,  55 => 7,  47 => 1,);
+        return array (  216 => 34,  203 => 24,  193 => 23,  180 => 11,  170 => 10,  151 => 7,  138 => 45,  134 => 44,  130 => 43,  126 => 42,  122 => 41,  116 => 37,  114 => 36,  111 => 35,  109 => 34,  102 => 32,  98 => 30,  95 => 29,  93 => 28,  89 => 26,  87 => 23,  78 => 17,  74 => 16,  70 => 15,  66 => 14,  63 => 13,  60 => 10,  55 => 7,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -246,9 +261,13 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
         {% endblock %}
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
         <link rel=\"stylesheet\" href=\"{{ asset('../public/css/style.css') }}\">
-        <link rel=\"stylesheet\" href=\"{{ asset('../public/css/850px_media.css') }}\">
         <link rel=\"stylesheet\" href=\"{{ asset('../public/css/1150px_media.css') }}\">
+        <link rel=\"stylesheet\" href=\"{{ asset('../public/css/850px_media.css') }}\">
+        <link rel=\"stylesheet\" href=\"{{ asset('../public/css/swiper-bundle.min.css') }}\">
         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css\"/>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'> </script>
+        <script src=\"https://kit.fontawesome.com/f89af89e77.js\" crossorigin=\"anonymous\"></script>
+
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
@@ -258,6 +277,9 @@ class __TwigTemplate_b35c0264babc913bdf4ebf4baf1f0d44 extends Template
     {% include('__composants/menu.html.twig') %}
     {% include('__composants/carrousel.html.twig') %}
     <main>
+        <div class=\"search\">
+            <a href=\"{{ path('app_index') }}\"><img src=\"{{ asset('images/ico/loupe.png') }}\" alt=\"\" width=\"25px\"></a><input type=\"text\" placeholder=\"Rechercher...\">
+        </div>
         {% block body %}{% endblock %}
     </main>
     {% include('__composants/footer.html.twig') %}

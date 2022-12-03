@@ -85,49 +85,72 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <input type=\"text\" id=\"search\">
-    <div id=\"result\"></div>
-        <div class=\"prog_box\" id=\"filter\">
-            ";
-        // line 9
+        echo "    ";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\DumpExtension']->dump($this->env, $context);
+        echo "
+";
+        // line 18
+        echo "    <div class=\"concerts\">
+        <h2>Concerts</h2>
+        <div class=\"slide-container swiper\">
+            <div class=\"slide-content slide1\">
+                <div class=\"card-wrapper swiper-wrapper\">
+                    ";
+        // line 23
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 9, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["prog"]) || array_key_exists("prog", $context) ? $context["prog"] : (function () { throw new RuntimeError('Variable "prog" does not exist.', 23, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 10
-            echo "                <div class=\"prog_card\">
-                    <p><span class=\"\">";
-            // line 11
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifTitre", [], "any", false, false, false, 11), "html", null, true);
-            echo "</span></p>
-                    <a href=\"";
-            // line 12
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_event");
-            echo "?id_event=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 12), "html", null, true);
-            echo "\"><img src=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("images/affiche/" . twig_get_attribute($this->env, $this->source, $context["i"], "manifAffiche", [], "any", false, false, false, 12))), "html", null, true);
-            echo "\" alt=\"\"></a>
-                    <div class=\"prog_data\">
-                        <p>Date : ";
-            // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDate", [], "any", false, false, false, 14), "html", null, true);
+            // line 24
+            echo "                        <div class=\"card swiper-slide\">
+                            <div class=\"image-content\">
+                                <span class=\"overlay\"></span>
+
+                                <div class=\"card-image\">
+                                    <img src=\"";
+            // line 29
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/affiche/affiche.png"), "html", null, true);
+            echo "\" alt=\"\" class=\"card-img\">
+                                </div>
+                            </div>
+
+                            <div class=\"card-content\">
+                                <h2 class=\"name\">";
+            // line 34
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifTitre", [], "any", false, false, false, 34), "html", null, true);
+            echo "</h2>
+                                <p class=\"description\">";
+            // line 35
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "manifDescription", [], "any", false, false, false, 35), "html", null, true);
             echo "</p>
-                        <a href=\"";
-            // line 15
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_event");
-            echo "?id_event=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["i"], "id", [], "any", false, false, false, 15), "html", null, true);
-            echo "\">Réserver</a>
-                    </div>
-                </div>
-            ";
+
+                                <button class=\"button\">Réserver</button>
+                            </div>
+                        </div>
+                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 19
-        echo "        </div>
-</div>
+        // line 41
+        echo "                </div>
+            </div>
+
+            <div class=\"swiper-button-next swiper-button-next1 swiper-navBtn\"></div>
+            <div class=\"swiper-button-prev swiper-button-prev1 swiper-navBtn\"></div>
+            <div class=\"swiper-pagination\"></div>
+        </div>
+    </div>
+
+    <script src=\"";
+        // line 50
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/swiper-bundle.min.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 51
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/swiper.js"), "html", null, true);
+        echo "\"></script>
+
+    <input type=\"text\" id=\"search\">
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -149,7 +172,7 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 
     public function getDebugInfo()
     {
-        return array (  129 => 19,  117 => 15,  113 => 14,  104 => 12,  100 => 11,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  150 => 51,  146 => 50,  135 => 41,  123 => 35,  119 => 34,  111 => 29,  104 => 24,  100 => 23,  93 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -159,21 +182,68 @@ class __TwigTemplate_d25a1be7da839b02c50676ac9c9c62db extends Template
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-    <input type=\"text\" id=\"search\">
-    <div id=\"result\"></div>
-        <div class=\"prog_box\" id=\"filter\">
-            {% for i in prog %}
-                <div class=\"prog_card\">
-                    <p><span class=\"\">{{ i.manifTitre }}</span></p>
-                    <a href=\"{{ path('app_event') }}?id_event={{ i.id }}\"><img src=\"{{ asset('images/affiche/' ~ i.manifAffiche ) }}\" alt=\"\"></a>
-                    <div class=\"prog_data\">
-                        <p>Date : {{ i.manifDate }}</p>
-                        <a href=\"{{ path('app_event') }}?id_event={{ i.id }}\">Réserver</a>
-                    </div>
+    {{ dump() }}
+{#    <div class=\"prog_box\">#}
+{#    {% for i in prog %}#}
+{#            <div class=\"prog_card\">#}
+{#                <img src=\"{{ asset('images/affiche/' ~ i.manifAffiche ) }}\" alt=\"\">#}
+{#                <div class=\"prog_data\">#}
+{#                    <p>Date : {{ i.manifDate }}</p>#}
+{#                    <a href=\"#\">Réserver</a>#}
+{#                </div>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
+    <div class=\"concerts\">
+        <h2>Concerts</h2>
+        <div class=\"slide-container swiper\">
+            <div class=\"slide-content slide1\">
+                <div class=\"card-wrapper swiper-wrapper\">
+                    {% for i in prog %}
+                        <div class=\"card swiper-slide\">
+                            <div class=\"image-content\">
+                                <span class=\"overlay\"></span>
+
+                                <div class=\"card-image\">
+                                    <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"\" class=\"card-img\">
+                                </div>
+                            </div>
+
+                            <div class=\"card-content\">
+                                <h2 class=\"name\">{{ i.manifTitre }}</h2>
+                                <p class=\"description\">{{ i.manifDescription }}</p>
+
+                                <button class=\"button\">Réserver</button>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
-            {% endfor %}
+            </div>
+
+            <div class=\"swiper-button-next swiper-button-next1 swiper-navBtn\"></div>
+            <div class=\"swiper-button-prev swiper-button-prev1 swiper-navBtn\"></div>
+            <div class=\"swiper-pagination\"></div>
         </div>
-</div>
+    </div>
+
+    <script src=\"{{ asset('js/swiper-bundle.min.js') }}\"></script>
+    <script src=\"{{ asset('js/swiper.js') }}\"></script>
+
+    <input type=\"text\" id=\"search\">
+{#    <div id=\"result\"></div>#}
+{#        <div class=\"prog_box\" id=\"filter\">#}
+{#            {% for i in prog %}#}
+{#                <div class=\"prog_card\">#}
+{#                    <p><span class=\"\">{{ i.manifTitre }}</span></p>#}
+{#                    <a href=\"{{ path('app_event') }}?id_event={{ i.id }}\"><img src=\"{{ asset('images/affiche/' ~ i.manifAffiche ) }}\" alt=\"\"></a>#}
+{#                    <div class=\"prog_data\">#}
+{#                        <p>Date : {{ i.manifDate }}</p>#}
+{#                        <a href=\"{{ path('app_event') }}?id_event={{ i.id }}\">Réserver</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#</div>#}
 {% endblock %}
 ", "programmation/index.html.twig", "C:\\Users\\Evan\\Documents\\GitHub\\SAE301-3event\\templates\\programmation\\index.html.twig");
     }
