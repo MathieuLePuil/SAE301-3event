@@ -7,7 +7,9 @@
 /public/bundles/
 /var/
 /vendor/
+/vendor/*
 /.idea/
+/.idea/*
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
