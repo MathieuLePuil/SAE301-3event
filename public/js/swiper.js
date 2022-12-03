@@ -41,8 +41,8 @@ var swiper2 = new Swiper(".slide2", {
         dynamicBullets: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next1",
-        prevEl: ".swiper-button-prev1",
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
     },
 
     breakpoints:{

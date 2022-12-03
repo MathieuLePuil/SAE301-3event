@@ -3,32 +3,6 @@
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <h2>Concerts</h2>
-    <div id="concert" class="prog_box">
-        <img src="{{ asset('images/ico/fleche_gauche.svg') }}" alt="">
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="{{ path('app_event') }}?id_event=1">Réserver</a>
-=======
-    {{ dump() }}
-    <div class="prog_box">
-    {% for i in prog %}
-            <div class="prog_card">
-                <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="">
-                <div class="prog_data">
-                    <p>Date : {{ i.manifDate }}</p>
-                    <a href="#">Réserver</a>
-                </div>
->>>>>>> dataInt
-            </div>
-<<<<<<< HEAD
-    {% endfor %}
-=======
-=======
     <div class="concerts">
         <h2>Concerts</h2>
         <div class="slide-container swiper">
@@ -136,7 +110,6 @@
             <div class="swiper-button-next swiper-button-next1 swiper-navBtn"></div>
             <div class="swiper-button-prev swiper-button-prev1 swiper-navBtn"></div>
             <div class="swiper-pagination"></div>
->>>>>>> view
         </div>
     </div>
 
@@ -277,25 +250,6 @@
             <div class="swiper-button-prev swiper-button-prev3 swiper-navBtn"></div>
             <div class="swiper-pagination"></div>
         </div>
-<<<<<<< HEAD
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <div class="prog_card">
-            <img src="{{ asset('images/affiche/affiche.png') }}" alt="">
-            <div class="prog_data">
-                <p>Date : xx/xx/xxxx</p>
-                <a href="#">Réserver</a>
-            </div>
-        </div>
-        <img src="{{ asset('images/ico/fleche_droite.svg') }}" alt="">
->>>>>>> view
-=======
->>>>>>> view
     </div>
 
     <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
