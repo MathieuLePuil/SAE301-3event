@@ -117,19 +117,16 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
     </table>
 
 ";
-        // line 42
+        // line 44
         echo "
 ";
-        // line 45
+        // line 46
         echo "
 ";
-        // line 47
-        echo "
-";
-        // line 71
+        // line 70
         echo "    </div>
     <a href=\"";
-        // line 72
+        // line 71
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_programmation");
         echo "\" class=\"command\">Continuer mes achats</a>
 ";
@@ -153,7 +150,7 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 
     public function getDebugInfo()
     {
-        return array (  133 => 72,  130 => 71,  127 => 47,  124 => 45,  121 => 42,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  130 => 71,  127 => 70,  124 => 46,  121 => 44,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -199,7 +196,6 @@ class __TwigTemplate_966db385a9b92f3f021b0946b0bbd393 extends Template
 {#            <img src=\"{{ asset('images/affiche/affiche.png') }}\" alt=\"Affiche\">#}
 {#        </div>#}
 {#        <div class=\"panier-event-info\">#}
-
 {#        </div>#}
 {#        <div class=\"panier_place\">#}
 
