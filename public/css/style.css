@@ -285,14 +285,11 @@ footer p{
     align-items: center;
 }
 .prog_box div img{
-    margin: 1em;
-    width: 25%;
-    height: auto;
+    margin: .7em;
 }
 .prog_card{
     text-align: center;
 }
-
 .prog_data{
     opacity: 0;
     transform: translate(0,-20%);
@@ -339,6 +336,9 @@ footer p{
     margin-bottom: 20px;
 }
 
+
+
+/*Event*/
 
 .event_page {
     display: flex;
@@ -475,16 +475,6 @@ footer p{
     font-size: 17px;
     font-weight: 900;
 }
-.event_img{
-    width: 25%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.highlighted{
-    color: blue;
-    background-color: red;
-}
 @media screen and (max-width: 450px) {
     .event_info h1 {
         font-size: 40px;
@@ -513,6 +503,9 @@ footer p{
     .back_home {
         margin: 0 1.5em 2em 1.5em;
     }
+}
+
+
 /*Fil d'ariane*/
 
 .ariane {
@@ -701,9 +694,6 @@ footer p{
     font-size: 14px;
     color: #707070;
     text-align: center;
-    text-overflow: Ellipsis;
-    white-space: nowrap;
-    overflow:hidden;
 }
 .button{
     border: white 0 solid;
