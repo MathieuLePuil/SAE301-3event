@@ -202,9 +202,10 @@ footer p{
 }
 .panier-event-info h2 {
     font-family: 'Montserrat';
+    text-align: center;
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 .panier-event-info {
@@ -307,6 +308,37 @@ footer p{
     transition-property: all;
     transition-duration: 2s;
 }
+.concerts {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.concerts h2 {
+    margin-bottom: 20px;
+}
+.football {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.football h2 {
+    margin-bottom: 20px;
+}
+.spectacle {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spectacle h2 {
+    margin-bottom: 20px;
+}
+
 
 .event_page {
     display: flex;
@@ -630,6 +662,7 @@ footer p{
     width: 100%;
     background-color: #2298BC;
     border-radius: 25px 25px 0 25px;
+    border: white 0 solid;
 }
 .overlay::before,
 .overlay::after{
@@ -640,12 +673,12 @@ footer p{
     height: 40px;
     width: 40px;
     background-color: #2298BC;
-    border: none;
+    border: white 0 solid;
 }
 .overlay::after{
     border-radius: 0 25px 0 0;
     background-color: #FFF;
-    border: none;
+    border: white 0 solid;
 }
 .card-image{
     position: relative;
@@ -673,7 +706,7 @@ footer p{
     overflow:hidden;
 }
 .button{
-    border: none;
+    border: white 0 solid;
     font-size: 16px;
     color: #FFF;
     padding: 8px 16px;
@@ -686,7 +719,6 @@ footer p{
 .button:hover{
     background: #2298BC;
 }
-
 .swiper-navBtn{
     color: #FFF;
     transition: color 0.3s ease;
@@ -711,7 +743,6 @@ footer p{
 .swiper-pagination-bullet-active{
     background-color: #2298BC;
 }
-
 @media screen and (max-width: 768px) {
     .slide-content{
         margin: 0 10px;
@@ -719,4 +750,269 @@ footer p{
     .swiper-navBtn{
         display: none;
     }
-}}
+}
+
+
+/*DIV Accueil*/
+
+.next-event {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.next-event h2 {
+    margin-bottom: 20px;
+}
+
+
+/*Page Salles*/
+
+.salle-box{
+    display: flex;
+    justify-content: center;
+    margin: 2em 5em 3em 5em;
+    background-color: #D9D9D9;
+    height: 310px;
+    border-radius: 60px;
+    box-shadow: #0f172a 0 20px 30px -10px;
+}
+.salle-presentation img{
+    border-radius: 20px;
+}
+@media screen and (max-width: 1350px) {
+    .salle-presentation img {
+        width: 80%;
+    }
+}
+.salle-presentation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.salle-presentation p, .salle-presentation h2 {
+    text-align: center;
+}
+.img-salle {
+    display: flex;
+    justify-content: center;
+}
+.map-salle {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Page Infos*/
+
+.infospratique {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.objet-interdit {
+    width: 70%;
+}
+.objet-interdit h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.objet-interdit p {
+    margin-left: 40px;
+    opacity: 0.8;
+}
+.objet-interdit h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.objet-interdit h4 {
+    color: indianred;
+}
+
+
+/*Page Contact*/
+
+form {
+    font-family: 'Montserrat', sans-serif;
+}
+#contact {
+    width: 100%;
+}
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    padding: 3px;
+}
+.container h2 {
+    width: 100%;
+    color: #282828;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #282828;
+}
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #282828;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+}
+.container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+.container .row100 .inputBox.textarea textarea {
+    height: 85%;
+    resize: none;
+}
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+button {
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer !important;
+    outline: none !important;
+    background: #2298BC !important;
+    color: #FFF !important;
+    font-size: 18px !important;
+    border-radius: 2px !important;
+}
+@media screen and (max-width: 440px) {
+    .container {
+        width: 100%;
+        margin-right: 20px;
+    }
+}
+
+
+/*Page Validation*/
+
+.validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+
+/*Page Profil*/
+
+table{
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border: 1px solid
+}
+thead{
+    background-color: #2298BC;
+    color: white
+}
+th,td{padding:8px 0}
+tbody tr:nth-child(even) {
+    background-color: #ddd
+}
+@media only screen and (max-width: 800px) {
+
+    table, thead, tbody, th, td, tr{
+        display: block
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align:left;
+        content: attr(data-title)
+    }
+}

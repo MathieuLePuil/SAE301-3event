@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon profil{% endblock %}
+
+{% block body %}
+    <h2>Mes informations</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>E-mail</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Adresse</th>
+            <th>Code Postal</th>
+            <th>Ville</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-title="E-mail">mathieu@mathieu.fr</td>
+            <td data-title="Prénom">Mathieu</td>
+            <td data-title="Nom">Le Puil</td>
+            <td data-title="Adresse">53 avenue Anatole France</td>
+            <td data-title="Code Postal">10000</td>
+            <td data-title="Ville">Troyes</td>
+        </tr>
+        <tr>
+            <td data-title="E-mail">mathieu@mathieu.fr</td>
+            <td data-title="Prénom">Mathieu</td>
+            <td data-title="Nom">Le Puil</td>
+            <td data-title="Adresse">53 avenue Anatole France</td>
+            <td data-title="Code Postal">10000</td>
+            <td data-title="Ville">Troyes</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Historique de commande</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Artiste</th>
+            <th>Nombre de place</th>
+            <th>Prix total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-title="Date">04/12/2022</td>
+            <td data-title="Artiste">Rammstein</td>
+            <td data-title="Nombre de place">2</td>
+            <td data-title="Prix total">160€</td>
+        </tr>
+        <tr>
+            <td data-title="Date">05/12/2022</td>
+            <td data-title="Artiste">Imagine Dragons</td>
+            <td data-title="Nombre de place">4</td>
+            <td data-title="Prix total">292€</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

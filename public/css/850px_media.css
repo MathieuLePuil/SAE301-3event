@@ -153,6 +153,24 @@ and (max-width: 850px) {
         justify-content: center;
         align-items: center;
     }
+    .next-event h2 {
+        font-size: 20px;
+    }
+
+    .salle-box{
+        height: 100%;
+        padding: 20px 0;
+        border-radius: 30px;
+    }
+    .salle-presentation img{
+        border-radius: 20px;
+    }
+    .salle-presentation {
+        flex-direction: column;
+    }
+    #menu_end ul {
+        margin-right: -35px;
+    }
 }
 
 @media screen and (max-width: 390px) {
