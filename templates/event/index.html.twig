@@ -11,9 +11,9 @@
         <div class="event_nom_lieu_prix">
             <div>
                 <h1 id="article">{{ event[id].manifTitre }}</h1>
-                <h2>{{ event[id].manifDate }}</h2>
+                <h2 id="date">{{ event[id].manifDate }}</h2>
 {#                <h2>{{ event[id].manifLieu}}</h2>#}
-                <h2>{{ event[id].manifHoraire }}</h2>
+                <h2 id="heure">{{ event[id].manifHoraire }}</h2>
                 <input type="hidden" id="id" value="{{ id }}">
             </div>
             <div class="event_reserver">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="event_description">
-        <p>{{ event[id].manifDescription }}</p>
+        <p id="desc">{{ event[id].manifDescription }}</p>
     </div>
     <div class="backhomebutton">
         <div class="back_home">

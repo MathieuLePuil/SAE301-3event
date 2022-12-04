@@ -3,7 +3,6 @@
 {% block title %}Programmation{% endblock %}
 
 {% block body %}
-    <input type="text" id="search">
     <div class="concerts">
         <h2>Concerts</h2>
         <div class="slide-container swiper">
@@ -15,7 +14,7 @@
                                 <span class="overlay"></span>
 
                                 <div class="card-image">
-                                    <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                                    <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="" class="card-img">
                                 </div>
                             </div>
 
@@ -46,7 +45,7 @@
                                 <span class="overlay"></span>
 
                                 <div class="card-image">
-                                    <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                                    <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="" class="card-img">
                                 </div>
                             </div>
 
@@ -77,7 +76,7 @@
                                 <span class="overlay"></span>
 
                                 <div class="card-image">
-                                    <img src="{{ asset('images/affiche/affiche.png') }}" alt="" class="card-img">
+                                    <img src="{{ asset('images/affiche/' ~ i.manifAffiche ) }}" alt="" class="card-img">
                                 </div>
                             </div>
 

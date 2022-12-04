@@ -668,6 +668,9 @@ footer p{
     font-size: 14px;
     color: #707070;
     text-align: center;
+    text-overflow: Ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
 }
 .button{
     border: none;

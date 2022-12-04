@@ -8,12 +8,41 @@ document.getElementById('liste').value="panier="+JSON.stringify(montab)+"; path=
 var totalgeneral=0
 montab.forEach(uneinfo => {
 
-    html = `<tr id="${uneinfo.id}">
-            <td>${uneinfo.article}</td>
-            <td><button class="moins">-</button><span>${uneinfo.quantite}</span><button class="plus">+</button></td>
-            <td ><span class="unitaire">${uneinfo.prix}</span>€</td>
-            <td><span class="prix">${uneinfo.prix * uneinfo.quantite}</span>€</td>
-            </tr>`;
+    // html = `<tr id="${uneinfo.id}">
+    //         <td>${uneinfo.article}</td>
+    //         <td><button class="moins">-</button><span>${uneinfo.quantite}</span><button class="plus">+</button></td>
+    //         <td ><span class="unitaire">${uneinfo.prix}</span>€</td>
+    //         <td><span class="prix">${uneinfo.prix * uneinfo.quantite}</span>€</td>
+    //         </tr>`;
+    console.log(uneinfo);
+    html = `
+        <div class="panier-card">
+        <div class="panier-img">
+            <img src="../images/affiche/rammstein.jpg" alt="Affiche">
+        </div>
+        <div class="panier-event-info">
+            <h2>${uneinfo.article}</h2>
+            <p>${uneinfo.date}</p>
+            <p>Stade de l'Aube</p>
+            <p>${uneinfo.heure}</p>
+        </div>
+        <div class="panier_place">
+            <div class="panier_quantite">
+                <div class="nbp">
+                    <label for="nbp">Nombre de place : </label>
+                    <input type="number" value="${uneinfo.quantite}" style="background-color: grey">
+                </div>
+                <div class="prix">
+                    <label for="#">Prix à l'unité : ${uneinfo.prix} €</label>
+                </div>
+                <a href="#"><img src="../images/ico/poubelle.png" alt="Affiche" width="20px"></a>
+            </div>
+            <div class="prixTotal">
+                <p>Prix total : ${uneinfo.prix * uneinfo.quantite} €</p>
+            </div>
+        </div>
+    </div>`;
+
 
     document.getElementById('zone').innerHTML += html
     totalgeneral += uneinfo.prix * uneinfo.quantite
