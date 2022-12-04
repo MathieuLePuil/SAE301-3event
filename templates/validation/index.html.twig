@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Validation{% endblock %}
+
+{% block body %}
+    <h2 class="validation">Votre commande a été validée</h2>
+    <div class="backhomebutton">
+        <div class="back_home">
+            <a href="{{ path('app_index') }}?id_event=1">RETOUR AU SITE</a>
+        </div>
+    </div>
+{% endblock %}

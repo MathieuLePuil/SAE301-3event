@@ -202,9 +202,10 @@ footer p{
 }
 .panier-event-info h2 {
     font-family: 'Montserrat';
+    text-align: center;
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 .panier-event-info {
@@ -942,5 +943,65 @@ button {
     .container {
         width: 100%;
         margin-right: 20px;
+    }
+}
+
+
+/*Page Validation*/
+
+.validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+
+/*Page Profil*/
+
+table{
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border: 1px solid
+}
+thead{
+    background-color: #2298BC;
+    color: white
+}
+th,td{padding:8px 0}
+tbody tr:nth-child(even) {
+    background-color: #ddd
+}
+@media only screen and (max-width: 800px) {
+
+    table, thead, tbody, th, td, tr{
+        display: block
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align:left;
+        content: attr(data-title)
     }
 }

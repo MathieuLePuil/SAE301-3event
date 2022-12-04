@@ -4,7 +4,7 @@
 
 {% block body %}
     <section id="contact">
-        <form method="post" action="envoyer_mail.php">
+        <form method="post">
             <div class="contactform">
                 <div class="container">
                     <h2>Vos informations</h2>
@@ -86,7 +86,7 @@
                     <div class="row100">
                         <div class="col">
                             <div class="inputBox">
-                                <button type="submit">Payer</button>
+                                <a href="{{ path('app_validation') }}"><button type="submit">Payer</button></a>
                             </div>
                         </div>
                     </div>
