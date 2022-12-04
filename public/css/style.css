@@ -353,6 +353,11 @@ footer p{
     justify-content: space-between;
     margin: -1%;
 }
+.event_img{
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+}
 .event_info {
     display: flex;
     height: 100%;
