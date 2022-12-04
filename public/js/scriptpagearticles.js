@@ -5,7 +5,7 @@ document.getElementById('ajout').addEventListener('click',function() {
     var heure = document.getElementById('heure').innerHTML
     var date = document.getElementById('date').innerHTML
     var desc = document.getElementById('desc').innerHTML
-
+    alert('Votre article '+article+ 'a été ajouté au panier');
     // console.log( id + " " + article + " " + prix )
 
     index = montab.findIndex(element => element.id ==id); //trouver l'article dans la liste du panier
@@ -21,5 +21,4 @@ document.getElementById('ajout').addEventListener('click',function() {
     panier+=parseInt(document.getElementById('qte').value); // incrementation de la valeur du panier
     document.getElementById('panier').innerHTML=panier;
     document.cookie = "panier="+JSON.stringify(montab)+"; path=/";
-
 })

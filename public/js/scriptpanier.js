@@ -14,11 +14,11 @@ montab.forEach(uneinfo => {
     //         <td ><span class="unitaire">${uneinfo.prix}</span>€</td>
     //         <td><span class="prix">${uneinfo.prix * uneinfo.quantite}</span>€</td>
     //         </tr>`;
-    console.log(uneinfo);
+    const link_img = "../images/affiche/"+ uneinfo.article.trim().toLowerCase().replace(/ /g,'')+".jpg";
     html = `
         <div class="panier-card">
         <div class="panier-img">
-            <img src="../images/affiche/rammstein.jpg" alt="Affiche">
+            <img src=${link_img} width="388px" height="245px" alt="Affiche">
         </div>
         <div class="panier-event-info">
             <h2>${uneinfo.article}</h2>
@@ -30,7 +30,7 @@ montab.forEach(uneinfo => {
             <div class="panier_quantite">
                 <div class="nbp">
                     <label for="nbp">Nombre de place : </label>
-                    <input type="number" value="${uneinfo.quantite}" style="background-color: grey">
+                    <input type="number" value="${uneinfo.quantite}" style="background-color: white; width: 50px;">
                 </div>
                 <div class="prix">
                     <label for="#">Prix à l'unité : ${uneinfo.prix} €</label>
