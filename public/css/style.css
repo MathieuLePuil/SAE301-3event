@@ -693,7 +693,9 @@ footer p{
 .description{
     font-size: 14px;
     color: #707070;
-    text-align: center;
+    max-height: 5ch;
+    overflow: hidden;
+    text-overflow: Ellipsis;
 }
 .button{
     border: white 0 solid;
