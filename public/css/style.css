@@ -462,24 +462,20 @@ footer p{
     justify-content: center;
 }
 .back_home {
-    display: flex;
     justify-content: center;
-    margin: 0 5em 2em 5em;
-    width: 220px;
-    height: 60px;
     background-color: #2298BC;
     border-radius: 20px;
-    align-items: center;
-}
-.back_home:hover {
-    width: 230px;
-    height: 70px;
 }
 .back_home a {
+    display: block;
+    padding: 1em;
     text-decoration: none;
     color: white;
     font-size: 17px;
     font-weight: 900;
+}
+.back_home a:hover{
+    padding: 1.2em;
 }
 @media screen and (max-width: 450px) {
     .event_info h1 {
