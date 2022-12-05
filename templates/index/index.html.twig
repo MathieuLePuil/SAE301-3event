@@ -22,7 +22,7 @@
                                 <h2 class="name">{{ i.manifTitre }}</h2>
                                 <p class="description">{{ i.manifDescription }}</p>
 
-                                <button class="button">Réserver</button>
+                                <a href="{{ path('app_event') }}?id_event={{ i.id }}" class="button"><button>Réserver</button></a>
                             </div>
                         </div>
                     {% endfor %}
