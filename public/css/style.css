@@ -460,6 +460,7 @@ footer p{
 .backhomebutton {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
 }
 .back_home {
     justify-content: center;

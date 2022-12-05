@@ -30,7 +30,7 @@ montab.forEach(uneinfo => {
             <div class="panier_quantite">
                 <div class="nbp">
                     <label for="nbp">Nombre de place : </label>
-                    <input type="number" value="${uneinfo.quantite}" style="background-color: white; width: 50px;">
+                    <input type="number" id="value_modif" min="1" value="${uneinfo.quantite}" style="background-color: white; width: 50px;">
                 </div>
                 <div class="prix">
                     <label for="#">Prix à l'unité : ${uneinfo.prix} €</label>
@@ -49,6 +49,9 @@ montab.forEach(uneinfo => {
 })
 document.getElementById('total').innerHTML = totalgeneral
 
+$("#value_modif").bind(function(event){
+    console.log(event);
+});
 
 document.querySelectorAll('.plus').forEach(clickplus)
 function clickplus(tag){
