@@ -467,6 +467,10 @@ footer p{
     background-color: #2298BC;
     border-radius: 20px;
 }
+#center_button{
+    display: flex;
+    justify-content: center;
+}
 .back_home a {
     display: block;
     padding: 1em;

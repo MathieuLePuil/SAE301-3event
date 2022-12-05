@@ -13,8 +13,12 @@
     </div>
     <div id="zone"></div>
     <input type="hidden" name="liste" id="liste">
-    <div class="bouton_commander back_home">
-        <a href="{{ path('app_login') }}">COMMANDER</a>
+    <div id="center_button">
+        <div class="bouton_commander back_home">
+            <a href="{{ path('app_login') }}">COMMANDER</a>
+        </div>
     </div>
-    <a href="{{ path('app_programmation') }}" class="command">Continuer mes achats</a>
+    <div id="center_button">
+        <a href="{{ path('app_programmation') }}" class="command">Continuer mes achats</a>
+    </div>
 {% endblock %}
