@@ -3,38 +3,50 @@
 {% block title %}Créer un compte{% endblock %}
 
 {% block body %}
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+    <div class="mb-3">
+        You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+    </div>
+    {% else %}
     <section id="contact">
-        <form method="post" action="register.php">
-            <div class="contactform">
-                <div class="container">
-                    <h2>Créer un compte</h2>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <input type="text" name="email" id="email" required="required">
-                                <span class="text">E-mail</span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <input type="password" name="password" id="password" required="required">
-                                <span class="text">Mot de passe</span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <button type="submit">Se connecter</button>
-                            </div>
+        <div class="contactform">
+            <div class="container">
+                <h2>Créer un compte</h2>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="email" value="{{ last_username }}" class="form-control" autocomplete="email"  name="email" id="email" required="required">
+                            <span class="text">E-mail</span>
+                            <span class="line"></span>
                         </div>
                     </div>
                 </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="password" name="password" id="password"  class="form-control" autocomplete="current-password" required="required">
+                            <span class="text">Mot de passe</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="_csrf_token"
+                       value="{{ csrf_token('authenticate') }}"
+                >
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <button type="submit">Se connecter</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="message">Pas encore inscrit ? <a href="/register">Créer un compte</a></p>
             </div>
-        </form>
+        </div>
     </section>
 {% endblock %}
