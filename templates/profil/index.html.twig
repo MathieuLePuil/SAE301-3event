@@ -17,20 +17,12 @@
         </thead>
         <tbody>
         <tr>
-            <td data-title="E-mail">mathieu@mathieu.fr</td>
-            <td data-title="Prénom">Mathieu</td>
-            <td data-title="Nom">Le Puil</td>
-            <td data-title="Adresse">53 avenue Anatole France</td>
-            <td data-title="Code Postal">10000</td>
-            <td data-title="Ville">Troyes</td>
-        </tr>
-        <tr>
-            <td data-title="E-mail">mathieu@mathieu.fr</td>
-            <td data-title="Prénom">Mathieu</td>
-            <td data-title="Nom">Le Puil</td>
-            <td data-title="Adresse">53 avenue Anatole France</td>
-            <td data-title="Code Postal">10000</td>
-            <td data-title="Ville">Troyes</td>
+            <td data-title="E-mail">{{ user[0].email }}</td>
+{#            <td data-title="Prénom">{{ user.prenom }}</td>#}
+{#            <td data-title="Nom">{{ user.nom }}</td>#}
+{#            <td data-title="Adresse">{{ user.adresse }}</td>#}
+{#            <td data-title="Code Postal">{{ user.codePostal }}</td>#}
+{#            <td data-title="Ville">{{ user.ville }}</td>#}
         </tr>
         </tbody>
     </table>

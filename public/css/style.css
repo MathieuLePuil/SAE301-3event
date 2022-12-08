@@ -430,7 +430,6 @@ footer p{
 }
 .bouton_reserver {
     display: flex;
-    width: 150px;
     background-color: #2298BC;
     border-radius: 20px;
     justify-content: center;
@@ -438,10 +437,7 @@ footer p{
 }
 .bouton_reserver:hover {
     display: flex;
-    width: 160px;
-    height: 60px;
     background-color: #2298BC;
-    border-radius: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -451,6 +447,9 @@ footer p{
     font-family: 'Montserrat';
     font-size: 17px;
     font-weight: 900;
+}
+.bouton_reserver input{
+    background-color: white;
 }
 .event_description {
     display: flex;

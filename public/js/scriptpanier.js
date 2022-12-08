@@ -35,7 +35,7 @@ montab.forEach(uneinfo => {
                 <div class="prix">
                     <label for="#">Prix à l'unité : ${uneinfo.prix} €</label>
                 </div>
-                <a href="#"><img src="../images/ico/poubelle.png" alt="Affiche" width="20px"></a>
+                <img src="../images/ico/poubelle.png" alt="Affiche" width="20px" class="bin">
             </div>
             <div class="prixTotal">
                 <p>Prix total : ${uneinfo.prix * uneinfo.quantite} €</p>
@@ -49,9 +49,10 @@ montab.forEach(uneinfo => {
 })
 document.getElementById('total').innerHTML = totalgeneral
 
-$("#value_modif").bind(function(event){
-    console.log(event);
-});
+document.querySelectorAll('.bin').forEach(clickbin)
+function clickbin(tag){
+    console.log(tag);
+}
 
 document.querySelectorAll('.plus').forEach(clickplus)
 function clickplus(tag){

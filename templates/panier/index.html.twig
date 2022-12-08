@@ -16,6 +16,11 @@
     <div id="center_button">
         <div class="bouton_commander back_home">
             <a href="{{ path('app_login') }}">COMMANDER</a>
+            {% if online == false %}
+                <a href="{{ path('app_login') }}">CONNECTEZ-VOUS</a>
+            {% elseif online == true %}
+                <a href="{{ path('app_login') }}">VALIDER</a>
+            {% endif %}
         </div>
     </div>
     <div id="center_button">
