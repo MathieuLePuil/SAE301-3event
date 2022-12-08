@@ -20,6 +20,8 @@
                 <a href="{{ path('app_login') }}">CONNECTEZ-VOUS</a>
             {% elseif online == true %}
                 <a href="{{ path('app_login') }}">VALIDER</a>
+            {% else %}
+                <a href="{{ path('app_login') }}">VALIDER</a>
             {% endif %}
         </div>
     </div>
